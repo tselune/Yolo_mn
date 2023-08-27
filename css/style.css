@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Rubik:wght@400;500&display=swap');
+
+#yoloLogo {
+    width: 140px;
+    height: 50px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+.nav-item>a:hover {
+    color: #EE4A9B;
+}
+
+body {
+    background-color: black;
+    margin: 30px auto;
+    width: 1080px;
+    color: #F5F5F7;
+    display: block;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.header-icons a {
+    color: #6FCDDB;
+    padding: 13px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 15px;
+    width: 500px;
+    height: 30px;
+}
+
+.form-control {
+    background-color: #D9D9D9;
+    opacity: 30%;
+    color: white;
+}
+
+.menu {
+    margin: 30px
+}
+
+.menu li {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.news1::before {
+    margin-top: 60px;
+    background-image: url('../images/jisoo1.jpeg');
+    width: 1080px;
+    height: 496px;
+    opacity: 25%;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50px;
+}
+
+.news1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.news1 img {
+    width: 390px;
+    height: 360px;
+    border-radius: 41px;
+    margin-left: 100px;
+    margin-top: 130px;
+    margin-right: 0px;
+    opacity: 100%;
+}
+
+.news1 h3 {
+    color: white;
+    position: absolute;
+    margin-top: 170px;
+    width: 500px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-transform: uppercase;
+    right: 70px;
+    padding-left: 10px;
+    border-left: 5px #EE4A9B solid;
+}
+
+
+.news1 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    width: 400px;
+    right: 150px;
+    top: 300px;
+
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+.suggested {
+    margin-top: 100px;
+}
+
+.liner {
+    width: 900px;
+    border-bottom: 2px solid #6FCDDB;
+    float: right;
+    padding-top: 10px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-size: 18px;
+    float: left
+}
+
+.suggNews {
+    margin-top: 80px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+.suggestedNews {
+    width: 190px;
+    height: 340px;
+    margin-left: 70px;
+}
+
+#sNews1::before {
+    background-image: url('../images/snew1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 190px;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
+#sNews1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.suggestedNews>p {
+    background-color: rgba(111, 205, 219, 0.5);
+    position: absolute;
+    padding: 5px 11px;
+    top: 270px;
+    width: 190px;
+    height: 70px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+#sNews2::before {
+    background-image: url('../images/snews2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 190px;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
+#sNews2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#sNews3::before {
+    background-image: url('../images/snews3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 190px;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
+#sNews3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#sNews4::before {
+    background-image: url('../images/snews4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 190px;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
+#sNews4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.video {
+    margin-top: 600px;
+}
+
+.famNews {
+    margin-top: 950px;
+}
+
+
+.content-primary {
+    display: block;
+}
+
+.yoloVideo {
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+.yoloVideo>iframe {
+    padding: 40px;
+    justify-content: center;
+}
+
+.fam {
+    padding: 80px 60px;
+}
+
+.fam>img {
+    width: 155px;
+    height: 145px;
+    /* padding: auto 30px; */
+}
+
+.famousPeople {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+#famTxt {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.fam>p {
+    font-size: 10px;
+    padding-left: auto;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.latestNews{
+    margin-top: 1300px;
+}
+
+.lateNews {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+}
+
+.latestNews > .liner {
+    width: 850px;
+}
+
+.lNews > img {
+    width: 280px;
+    height: 210px;
+    float: left;
+    padding-right: 30px;
+}
+
+.lNews {
+    width: 500px;
+    font-size: 10px;
+    height: 210px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    
+}
+
+.lNews article {
+    font-size: 15px;
+    font-weight: 500;   
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    border-top: #6FCDDB 1px solid;
+    padding: 20px;
+}
+
+.fMenu {
+    padding: 50px
+}
+
+footer p {
+    text-align: center;
+    color: #8C858B;
+}
+
