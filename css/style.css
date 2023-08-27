@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Rubik:wght@400;500&display=swap');
 
 #yoloLogo {
-    width: 140px;
-    height: 50px;
+    width: 167px;
+    height: 56px;
 }
 
 .nav-link {
@@ -53,24 +53,13 @@ form {
     font-size: 20px;
 }
 
-.news1::before {
-    margin-top: 60px;
-    background-image: url('../images/jisoo1.jpeg');
-    width: 1080px;
-    height: 496px;
-    opacity: 25%;
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius: 50px;
-}
-
 .news1 {
     position: relative;
-    width: 100%;
-    height: 100%;
     display: flex;
+    width: 1080px;
+    height: 496px;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .news1 img {
@@ -78,15 +67,14 @@ form {
     height: 360px;
     border-radius: 41px;
     margin-left: 100px;
-    margin-top: 130px;
+    margin-top: 80px;
     margin-right: 0px;
-    opacity: 100%;
 }
 
 .news1 h3 {
     color: white;
     position: absolute;
-    margin-top: 170px;
+    margin-top: 110px;
     width: 500px;
     font-size: 30px;
     font-weight: 800;
@@ -97,7 +85,6 @@ form {
     border-left: 5px #EE4A9B solid;
 }
 
-
 .news1 p {
     font-size: 20px;
     font-weight: 400;
@@ -105,8 +92,56 @@ form {
     position: absolute;
     width: 400px;
     right: 150px;
-    top: 300px;
+    top: 220px;
+}
 
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: #bbb 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+#mainNews1 {
+    background-image: url('../images/jis1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#mainNews2 {
+    background-image: url('../images/medee1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#mainNews3 {
+    background-image: url('../images/medee3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.slideNewsContainer {
+    margin: auto;
+    height: 550px;
 }
 
 h3 {
@@ -114,7 +149,7 @@ h3 {
 }
 
 .suggested {
-    margin-top: 100px;
+    height: 480px;
 }
 
 .liner {
@@ -130,24 +165,35 @@ h5 {
     float: left
 }
 
-.suggNews {
+/* .suggNews {
     margin-top: 80px;
     display: flex;
     position: absolute;
     justify-content: center;
-}
+    width: 1080px;
+} */
 
-.suggestedNews {
+/* .suggestedNews {
     width: 190px;
     height: 340px;
-    margin-left: 70px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+.swiper-slide{
+    width: 210px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 20px 10px;
 }
 
 #sNews1::before {
     background-image: url('../images/snew1.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
+    width: 210px;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -155,17 +201,37 @@ h5 {
 
 #sNews1 {
     position: relative;
-    width: 100%;
+    width: 210px;
     height: 100%;
     display: flex;
 }
 
-.suggestedNews>p {
+/* .suggestedNews>p {
     background-color: rgba(111, 205, 219, 0.5);
     position: absolute;
     padding: 5px 11px;
     top: 270px;
     width: 190px;
+    height: 70px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: #FFFFFF;
+    text-align: left;
+} */
+.swiper-wrapper{
+    display: flex;
+    white-space: space-around;
+}
+
+.swiper-slide>p {
+    background-color: rgba(111, 205, 219, 0.5);
+    position: absolute;
+    padding: 5px 11px;
+    top: 270px;
+    width: 210px;
     height: 70px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -180,7 +246,7 @@ h5 {
     background-image: url('../images/snews2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
+    width: 210px;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -188,7 +254,7 @@ h5 {
 
 #sNews2 {
     position: relative;
-    width: 100%;
+    width: 210px;
     height: 100%;
     display: flex;
 }
@@ -197,7 +263,7 @@ h5 {
     background-image: url('../images/snews3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
+    width: 210px;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -205,7 +271,7 @@ h5 {
 
 #sNews3 {
     position: relative;
-    width: 100%;
+    width: 210px;
     height: 100%;
     display: flex;
 }
@@ -214,7 +280,7 @@ h5 {
     background-image: url('../images/snews4.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
+    width: 210px;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -222,22 +288,56 @@ h5 {
 
 #sNews4 {
     position: relative;
-    width: 100%;
+    width: 210px;
+    height: 100%;
+    display: flex;
+}
+
+#sNews5::before {
+    background-image: url('../images/snews5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 210px;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
+#sNews5 {
+    position: relative;
+    width: 210px;
+    height: 100%;
+    display: flex;
+}
+
+#sNews6::before {
+    background-image: url('../images/snews6.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 210px;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
+#sNews6 {
+    position: relative;
+    width: 210px;
     height: 100%;
     display: flex;
 }
 
 .video {
-    margin-top: 600px;
+    height: 330px;
 }
 
 .famNews {
-    margin-top: 950px;
+    margin-top: 10px;
+    height: 330px;
 }
 
-
 .content-primary {
-    display: block;
+    /* display: block; */
 }
 
 .yoloVideo {
@@ -282,8 +382,8 @@ h5 {
     justify-content: center;
 }
 
-.latestNews{
-    margin-top: 1300px;
+.latestNews {
+    margin-top: 20px;
 }
 
 .lateNews {
@@ -293,11 +393,11 @@ h5 {
     padding: 30px;
 }
 
-.latestNews > .liner {
+.latestNews>.liner {
     width: 850px;
 }
 
-.lNews > img {
+.lNews>img {
     width: 280px;
     height: 210px;
     float: left;
@@ -310,12 +410,12 @@ h5 {
     height: 210px;
     margin-bottom: 30px;
     padding-left: 30px;
-    
+
 }
 
 .lNews article {
     font-size: 15px;
-    font-weight: 500;   
+    font-weight: 500;
     padding-top: 10px;
     margin-bottom: 10px;
 }
@@ -334,3 +434,7 @@ footer p {
     color: #8C858B;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    color: #FFFFFF;
+    right: 0px;
+}
