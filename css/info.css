@@ -1,0 +1,47 @@
+ul a{
+    padding: 5px 5px 5px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #D9D9D9;
+    display: block;
+    margin: 10px;
+}
+
+.info1 {
+    border-left: 5px solid #EE4A9B;
+    font-weight: bold;
+}
+
+.leftNav {
+    border-right: #6FCDDB 2px solid;
+    float: left;
+    padding-right: 20px;
+    height: 400px;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+.rightNav {
+    float: left;
+    width: 800px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.rightNav > img {
+    width: 700px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contactTxt {
+    padding: 10px;
+}
+
+.rightNav > iframe {
+    padding-left: 30px;
+}
