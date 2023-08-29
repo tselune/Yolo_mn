@@ -1,0 +1,10 @@
+html {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    --default-pink: #EE4A9B;
+    --header-font: 'Rubik', sans-serif;
+    --text-font: ''
+
+}
