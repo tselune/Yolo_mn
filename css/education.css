@@ -49,48 +49,31 @@
     background-image: url('../images/ed1.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
-    height: 340px;
 }
 
 #careerNews1 { 
     background-image: url('../images/ed1.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
-    height: 340px;
-}
-
-#careerNews1 { 
-    background-image: url('../images/ed1.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 190px;
-    height: 340px;
 }
 
 #careerNews2 { 
     background-image: url('../images/ed2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
-    height: 340px;
 }
 
 #careerNews3 { 
     background-image: url('../images/ed3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 190px;
-    height: 340px;
+
 }
 
 #careerNews4 { 
     background-image: url('../images/ed4.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 190px;
-    height: 340px;
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
 }
 
 .career {
@@ -98,4 +81,8 @@
     display: flex;
     position: absolute;
     justify-content: center;
+}
+
+.careerChoice > .liner {
+    width: 850px;
 }
