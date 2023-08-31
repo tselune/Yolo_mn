@@ -1,6 +1,6 @@
 .eNews1{
-    background-image: url('../images/edu1.png');
-    width: 960px;
+    background-image: url('../images/edu1.webp');
+    width: 90%;
     height: 400px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -9,7 +9,7 @@
 
 
 .eNews1 img {
-    width: 300px;
+    width: 20%;
     height: 250px;
     border-radius: 41px;
     margin-left: 100px;
@@ -22,12 +22,12 @@
     color: white;
     position: absolute;
     margin-top: 100px;
-    width: 450px;
+    width: 25%;
     font-size: 25px;
     font-weight: 800;
     line-height: 30px;
     text-transform: uppercase;
-    right: 300px;
+    right: 400px;
     padding-left: 10px;
     border-left: 5px #EE4A9B solid;
 }
@@ -36,8 +36,8 @@
     font-weight: 400;
     color: white;
     position: absolute;
-    width: 350px;
-    right: 400px;
+    width: 20%;
+    right: 475px;
     top: 400px;
 }
 
@@ -45,35 +45,73 @@
     color: #EE4A9B;
 }
 
-#careerNews1 { 
-    background-image: url('../images/ed1.png');
+#careerNews1::before {
+    background-image: url('../images/ed1.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 80%;
+    height: 340px;
+    opacity: 70%;
+    content: "";
 }
 
-#careerNews1 { 
-    background-image: url('../images/ed1.png');
+#careerNews1 {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#careerNews2::before {
+    background-image: url('../images/ed2.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 80%;
+    height: 340px;
+    opacity: 70%;
+    content: "";
 }
 
 #careerNews2 { 
-    background-image: url('../images/ed2.png');
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+
+#careerNews3::before {
+    background-image: url('../images/ed3.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    width: 80%;
+    height: 340px;
+    opacity: 70%;
+    content: "";
 }
 
 #careerNews3 { 
-    background-image: url('../images/ed3.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
 
 }
 
+#careerNews4::before {
+    background-image: url('../images/ed4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 340px;
+    opacity: 70%;
+    content: "";
+}
+
 #careerNews4 { 
-    background-image: url('../images/ed4.png');
-    /* background-repeat: no-repeat;
-    background-size: 100% 100%; */
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
 }
 
 .career {
@@ -83,6 +121,20 @@
     justify-content: center;
 }
 
-.careerChoice > .liner {
-    width: 850px;
+.careerChoice .liner {
+    width: 80%;
+}
+
+.swiper-wrapper{
+    display: flex;
+    white-space: space-around;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FFFFFF;
+    right: 0px;
+}
+
+.careerChoice {
+    width: 100%;
 }
