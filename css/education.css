@@ -21,13 +21,8 @@
     height: 35%;
 }
 
-.career {
-    height: 35%;
-    margin-top: 20px;
-    padding: 20px;
-}
 
-.career .liner {
+#career #liner {
     width: 78%;
 }
 
@@ -59,16 +54,6 @@
     display: flex;
 }
 
-.language {
-    height: 35%;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.language .liner {
-    width: 85%;
-}
-
 #langNews1 {
     background-image: url('../images/ed7.webp');
     background-repeat: no-repeat;
@@ -98,15 +83,6 @@
 }
 
 /* Тэтгэлэг */
-.scholar {
-    height: 35%;
-    margin-top: 20px;
-    padding: 20px;
-}
-
-.scholar .liner {
-    width: 85%;
-}
 
 #scholarNews1 {
     background-image: url('../images/ed2.webp');

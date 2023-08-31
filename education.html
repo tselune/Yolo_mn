@@ -47,16 +47,16 @@
                     <a class="nav-link" href="education.html" id="selectedMenu">Боловсрол</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Энтертайнмент</a>
+                    <a class="nav-link" href="entertain.html">Энтертайнмент</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Хувь хүний боловсрол</a>
+                    <a class="nav-link" href="personal.html">Хувь хүний боловсрол</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Сонин хачин</a>
+                    <a class="nav-link" href="curNews.html">Сонин хачин</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Зөвлөгөө</a>
+                    <a class="nav-link" href="advise.html">Зөвлөгөө</a>
                 </li>
             </ul>
         </nav>
@@ -93,10 +93,10 @@
 
 
     <!-- Мэргэжил сонголт -->
-    <section class="career">
+    <section class="swipeNews" id="career">
         <div class="swiper mySwiper">
             <h5>Мэргэжил сонголт</h5>
-            <div class="liner"></div>
+            <div id="liner"></div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide" id="careerNews1">
                     <p>Мэргэжлээ сонгоход туслах сорил</p>
@@ -118,10 +118,10 @@
 
 
 <!-- Гадаад хэл -->
-<section class="language">
+<section class="swipeNews">
     <div class="swiper mySwiper">
         <h5>Гадаад хэл</h5>
-        <div class="liner"></div>
+        <div id="liner"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide" id="langNews1">
                 <p>Хятад хэлний түвшин ахиулахад туслах нь</p>
@@ -142,22 +142,22 @@
 </section>
 
 <!-- Тэтгэлэг -->
-<section class="scholar">
+<section class="swipeNews">
     <div class="swiper mySwiper">
         <h5>Тэтгэлэг</h5>
-        <div class="liner"></div>
+        <div id="liner"></div>
         <div class="swiper-wrapper">
             <div class="swiper-slide" id="scholarNews1">
                 <p>БНХАУ-ын ЗГ-ийн тэтгэлэг</p>
             </div>
             <div class="swiper-slide" id="scholarNews2">
-                <p>Энэтхэг улсын ЗГ-ийн тэтгэлэг </p>
+                <p>"Голомт банк"-ны нэрэмжит тэтгэлэг</p>
             </div>
             <div class="swiper-slide" id="scholarNews3">
                 <p>"Дэлхий чамайг дуудаж байна"</p>
             </div>
             <div class="swiper-slide" id="scholarNews4">
-                <p>"Голомт банк"-ны нэрэмжит тэтгэлэг"</p>
+                <p>Энэтхэг улсын ЗГ-ийн тэтгэлэг</p>
             </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -183,13 +183,13 @@
                     <a class="nav-link" href="./about.html">Бидний тухай</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Холбоо барих</a>
+                    <a class="nav-link" href="./contact.html">Холбоо барих</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Үйлчилгээний нөхцөл</a>
+                    <a class="nav-link" href="./policy.html">Үйлчилгээний нөхцөл</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Редакцийн зарчим</a>
+                    <a class="nav-link" href="./terms.html">Редакцийн зарчим</a>
                 </li>
             </ul>
         </section>
@@ -236,6 +236,20 @@
         }
         slides[slideIndex - 1].style.display = "flex";
         dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+<script>
+    function showMenu(){
+        document.getElementsByClassName("menu")[0].style.display = "inline";
+        document.getElementsByClassName("menuMobile")[0].style.display = "none";
+        document.getElementsByClassName("closeMenu")[0].style.display = "inline";
+    }
+
+    function hideMenu(){
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("menuMobile")[0].style.display = "inline";
+        document.getElementsByClassName("closeMenu")[0].style.display = "none";
     }
 </script>
 
