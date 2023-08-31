@@ -1,0 +1,119 @@
+/* Хаана, юу болох вэ? */
+#evNews1 {
+    background-image: url('../images/event1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#evNews2 {
+    background-image: url('../images/event2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#evNews3 {
+    background-image: url('../images/event3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#evNews4 {
+    background-image: url('../images/event4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#liner {
+    width: 78%;
+}
+
+
+/* Амьтдын тухай */
+#anNews1 {
+    background-image: url('../images/animal1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#anNews2 {
+    background-image: url('../images/animal2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#anNews3 {
+    background-image: url('../images/animal3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#anNews4 {
+    background-image: url('../images/animal4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#animal #liner {
+    width: 81%;
+}
+
+/* Үүнийг мэдэх үү? */
+#knNews1 {
+    background-image: url('../images/know1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#knNews2 {
+    background-image: url('../images/know2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#knNews3 {
+    background-image: url('../images/know3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#knNews4 {
+    background-image: url('../images/know4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+
+/* Гол мэдээ */
+#curiousNews1 {
+    background-image: url('../images/curBack.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#curiousNews2 {
+    background-image: url('../images/ed5.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#curiousNews3 {
+    background-image: url('../images/ed9.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+
+
+
+

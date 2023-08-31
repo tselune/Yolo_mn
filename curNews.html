@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOLO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/curNews.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between">
+            <a href="index.html">
+                <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
+            </a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search" aria-hidden="true"
+                            name="search" style="color: #6FCDDB;"></i></button>
+                </div>
+                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()">
+                </div>
+                <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i>
+                </div>
+            </form>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+        <nav class="menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Боловсрол</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertain.html">Энтертайнмент</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal.html">Хувь хүний боловсрол</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curNews.html" id="selectedMenu">Сонин хачин</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advise.html">Зөвлөгөө</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideNewsContainer">
+        <article class="news1" id="curiousNews1">
+            <img src="../images/curMain.webp" alt="jisoo">
+            <h3>Эмэгтэй шигшээ баг Йорданд тоглож байна</h3>
+            <p>Анх удаа энэхүү тэмцээнд оролцож буй Монголын шигшээ баг талбайн эздэд ялагдал хүлээсэн ч нэг гоолыг оруулав.</p>
+        </article>
+
+        <article class="news1" id="curiousNews2">
+            <img src="../images/edu2.webp" alt="jisoo">
+            <h3>2023 онд зарлагдаад буй тэтгэлэгт хөтөлбөрүүд</h3>
+            <p>Шинэ он гараад удаагүй байгаа энэ хугацаанд зарим улс орнууд засгийн газрын тэтгэлэгт хөтөлбөрүүдээ
+                зарлажээ. </p>
+        </article>
+
+        <article class="news1" id="curiousNews3">
+            <img src="../images/edu2.webp" alt="jisoo">
+            <h3>2023 онд зарлагдаад буй тэтгэлэгт хөтөлбөрүүд</h3>
+            <p>Шинэ он гараад удаагүй байгаа энэ хугацаанд зарим улс орнууд засгийн газрын тэтгэлэгт хөтөлбөрүүдээ
+                зарлажээ. </p>
+        </article>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+
+    <!-- Хаана, юу болох вэ? -->
+    <section class="swipeNews">
+        <div class="swiper mySwiper">
+            <h5>Хаана, юу болох вэ?</h5>
+            <div id="liner"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="evNews1">
+                    <p>Бидний суралцсан түүх: Youtuber болсон нь</p>
+                </div>
+                <div class="swiper-slide" id="evNews2">
+                    <p>Энэ долоо хоногт ХААНА, ЮУ болох вэ? (01/09-01/15)</p>
+                </div>
+                <div class="swiper-slide" id="evNews3">
+                    <p>“THE MOOD” үзэсгэлэн нээлтээ хийлээ</p>
+                </div>
+                <div class="swiper-slide" id="evNews4">
+                    <p>IBIZA хөгжмийн наадмын тухай чи юу мэдэх вэ?</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+<!-- Амьтдын тухай-->
+<section class="swipeNews" id="animal">
+    <div class="swiper mySwiper">
+        <h5>Амьтдын тухай</h5>
+        <div id="liner"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="anNews1">
+                <p>Амьтад юмсыг хэрхэн хардаг вэ?</p>
+            </div>
+            <div class="swiper-slide" id="anNews2">
+                <p>Өвөл хөлдөж хавар амилдаг мэлхий</p>
+            </div>
+            <div class="swiper-slide" id="anNews3">
+                <p>Зэрлэг амьтдын гайхалтай 30 ХӨРӨГ</p>
+            </div>
+            <div class="swiper-slide" id="anNews4">
+                <p>Дэлхийн хамгийн АЗ ЖАРГАЛТАЙ амьтан - Квокка</p>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Үүнийг мэдэх үү?-->
+<section class="swipeNews">
+    <div class="swiper mySwiper">
+        <h5>Үүнийг мэдэх үү?</h5>
+        <div id="liner"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="knNews1">
+                <p>Ван Гогийн бүтээлүүдийн тухай?</p>
+            </div>
+            <div class="swiper-slide" id="knNews2">
+                <p>Ахлах ангиа төгсөхөөс өмнө амжиж хийх зүйлс</p>
+            </div>
+            <div class="swiper-slide" id="knNews3">
+                <p>Юу таныг МАШ ИХ аз жаргалтай болгодог</p>
+            </div>
+            <div class="swiper-slide" id="knNews4">
+                <p>ЛГБТИК байх нь өөр, гаж зүйл БИШ
+                </p>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+    <footer>
+        <section class="d-flex justify-content-between">
+            <a href="index.html"><img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo"></a>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <section class="fMenu">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Бидний тухай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Холбоо барих</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./policy.html">Үйлчилгээний нөхцөл</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./terms.html">Редакцийн зарчим</a>
+                </li>
+            </ul>
+        </section>
+        <p>&copy 2023 YOLO ХХК</p>
+    </footer>
+
+  
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- initializing swiper slider -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            grabCursor: true,
+            slidesPerGroup: 1,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("news1");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+<script>
+    function showMenu(){
+        document.getElementsByClassName("menu")[0].style.display = "inline";
+        document.getElementsByClassName("menuMobile")[0].style.display = "none";
+        document.getElementsByClassName("closeMenu")[0].style.display = "inline";
+    }
+
+    function hideMenu(){
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("menuMobile")[0].style.display = "inline";
+        document.getElementsByClassName("closeMenu")[0].style.display = "none";
+    }
+</script>
+
+
+</body>
+
+</html>
