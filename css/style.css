@@ -1,7 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Rubik:wght@400;500&display=swap');
 
+body {
+    background-color: black;
+    margin: 30px auto;
+    width: 1080px;
+    height: 2400px;
+    color: #F5F5F7;
+    display: block;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* Header хэсэг */
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
 #yoloLogo {
-    width: 167px;
+    width: 156px;
     height: 56px;
 }
 
@@ -13,27 +32,20 @@
     color: #EE4A9B;
 }
 
-body {
-    background-color: black;
-    margin: 30px auto;
-    width: 1080px;
-    color: #F5F5F7;
-    display: block;
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-}
-
 .header-icons a {
     color: #6FCDDB;
-    padding: 13px;
+    padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.header-icons {
+    margin-top: 15px;
 }
 
 form {
     margin-top: 15px;
-    width: 500px;
+    width: 45%;
     height: 30px;
 }
 
@@ -53,17 +65,20 @@ form {
     font-size: 20px;
 }
 
+/* ---------------------------------------------------------------- */
+
+/* Гол мэдээний хэсэг */
 .news1 {
     position: relative;
     display: flex;
-    width: 1080px;
+    width: 100%;
     height: 496px;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
 .news1 img {
-    width: 390px;
+    width: 35%;
     height: 360px;
     border-radius: 41px;
     margin-left: 100px;
@@ -75,7 +90,7 @@ form {
     color: white;
     position: absolute;
     margin-top: 110px;
-    width: 500px;
+    width: 45%;
     font-size: 30px;
     font-weight: 800;
     line-height: 36px;
@@ -90,8 +105,8 @@ form {
     font-weight: 400;
     color: white;
     position: absolute;
-    width: 400px;
-    right: 150px;
+    width: 45%;
+    right: 70px;
     top: 220px;
 }
 
@@ -141,19 +156,19 @@ form {
 
 .slideNewsContainer {
     margin: auto;
-    height: 550px;
+    height: 35%;
 }
 
-h3 {
-    font-family: 'Inter', sans-serif;
-}
 
+/* ---------------------------------------------------------------- */
+/* Санал болгох мэдээ  */
 .suggested {
-    height: 480px;
+    height: 35%;
+    margin-top: 20px;
 }
 
 .liner {
-    width: 900px;
+    width: 85%;
     border-bottom: 2px solid #6FCDDB;
     float: right;
     padding-top: 10px;
@@ -165,25 +180,14 @@ h5 {
     float: left
 }
 
-/* .suggNews {
-    margin-top: 80px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    width: 1080px;
-} */
-
-/* .suggestedNews {
-    width: 190px;
-    height: 340px;
-    padding-left: 40px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-} */
+.swiper-button-next, .swiper-button-prev {
+    color: #FFFFFF;
+    right: 0px;
+}
 
 .swiper-slide{
-    width: 210px;
-    height: 340px;
+    width: 80%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin: 20px 10px;
@@ -193,7 +197,7 @@ h5 {
     background-image: url('../images/snew1.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 210px;
+    width: 80%;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -201,26 +205,11 @@ h5 {
 
 #sNews1 {
     position: relative;
-    width: 210px;
+    width: 80%;
     height: 100%;
     display: flex;
 }
 
-/* .suggestedNews>p {
-    background-color: rgba(111, 205, 219, 0.5);
-    position: absolute;
-    padding: 5px 11px;
-    top: 270px;
-    width: 190px;
-    height: 70px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-    color: #FFFFFF;
-    text-align: left;
-} */
 .swiper-wrapper{
     display: flex;
     white-space: space-around;
@@ -229,13 +218,13 @@ h5 {
 .swiper-slide>p {
     background-color: rgba(111, 205, 219, 0.5);
     position: absolute;
-    padding: 5px 11px;
+    padding: 10px;
     top: 270px;
-    width: 210px;
+    width: 80%;
     height: 70px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Rubik', sans-serif;
     color: #FFFFFF;
@@ -246,7 +235,7 @@ h5 {
     background-image: url('../images/snews2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 210px;
+    width: 80%;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -254,7 +243,7 @@ h5 {
 
 #sNews2 {
     position: relative;
-    width: 210px;
+    width: 80%;
     height: 100%;
     display: flex;
 }
@@ -263,7 +252,7 @@ h5 {
     background-image: url('../images/snews3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 210px;
+    width: 80%;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -271,7 +260,7 @@ h5 {
 
 #sNews3 {
     position: relative;
-    width: 210px;
+    width: 80%;
     height: 100%;
     display: flex;
 }
@@ -280,7 +269,7 @@ h5 {
     background-image: url('../images/snews4.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 210px;
+    width: 80%;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -288,7 +277,7 @@ h5 {
 
 #sNews4 {
     position: relative;
-    width: 210px;
+    width: 80%;
     height: 100%;
     display: flex;
 }
@@ -297,7 +286,7 @@ h5 {
     background-image: url('../images/snews5.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 210px;
+    width: 80%;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -305,7 +294,7 @@ h5 {
 
 #sNews5 {
     position: relative;
-    width: 210px;
+    width: 80%;
     height: 100%;
     display: flex;
 }
@@ -314,7 +303,7 @@ h5 {
     background-image: url('../images/snews6.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 210px;
+    width: 80%;
     height: 340px;
     opacity: 70%;
     content: "";
@@ -322,50 +311,34 @@ h5 {
 
 #sNews6 {
     position: relative;
-    width: 210px;
+    width: 80%;
     height: 100%;
     display: flex;
 }
 
-.video {
-    height: 330px;
-}
+/* ----------------------------------------------------------------
+
+Алдартнууд */
 
 .famNews {
-    margin-top: 10px;
-    height: 330px;
-}
-
-.content-primary {
-    /* display: block; */
-}
-
-.yoloVideo {
-    margin-top: 30px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-}
-
-.yoloVideo>iframe {
-    padding: 40px;
-    justify-content: center;
+    margin-top: 20px;
+    height: 10%;
 }
 
 .fam {
-    padding: 80px 60px;
+    padding: 60px 60px;
 }
 
 .fam>img {
-    width: 155px;
-    height: 145px;
-    /* padding: auto 30px; */
+    width: 100%;
+    height: 60%;
 }
 
 .famousPeople {
-    display: flex;
-    position: absolute;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    justify-content: center; 
 }
 
 #famTxt {
@@ -382,30 +355,33 @@ h5 {
     justify-content: center;
 }
 
+/* ---------------------------------------------------------------- */
+
+/* Сүүлд нэмэгдсэн */
 .latestNews {
-    margin-top: 20px;
+    height: 20%;
 }
 
 .lateNews {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto;
     width: 100%;
     padding: 30px;
 }
 
-.latestNews>.liner {
-    width: 850px;
+.latestNews >.liner {
+    width: 80%;
 }
 
 .lNews>img {
-    width: 280px;
+    width: 50%;
     height: 210px;
     float: left;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .lNews {
-    width: 500px;
+    width: 100%;
     font-size: 10px;
     height: 210px;
     margin-bottom: 30px;
@@ -420,6 +396,9 @@ h5 {
     margin-bottom: 10px;
 }
 
+/* ---------------------------------------------------------------- */
+
+/* Footer хэсэг */
 footer {
     border-top: #6FCDDB 1px solid;
     padding: 20px;
@@ -432,9 +411,4 @@ footer {
 footer p {
     text-align: center;
     color: #8C858B;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    color: #FFFFFF;
-    right: 0px;
 }
