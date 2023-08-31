@@ -1,0 +1,125 @@
+/* Зөв дадал */
+#habNews1 {
+    background-image: url('../images/habit1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#habNews2 {
+    background-image: url('../images/habit2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#habNews3 {
+    background-image: url('../images/habit3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#habNews4 {
+    background-image: url('../images/habit4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.slideNewsContainer {
+    margin: auto;
+    height: 35%;
+}
+
+#book #liner {
+    width: 78% !important;
+}
+
+#liner {
+    width: 87% !important;
+}
+
+
+/* Номтой нөхөрлөе */
+#bookNews1 {
+    background-image: url('../images/book1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#bookNews2 {
+    background-image: url('../images/book2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#bookNews3 {
+    background-image: url('../images/book3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#bookNews4 {
+    background-image: url('../images/book4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+
+
+/* Зөвлөгөө */
+#adNews1 {
+    background-image: url('../images/ad1.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#adNews2 {
+    background-image: url('../images/ad2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#adNews3 {
+    background-image: url('../images/ad3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#adNews4 {
+    background-image: url('../images/ad4.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+/* Гол мэдээ */
+#personNews1 {
+    background-image: url('../images/perBack.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#scholarNews2 {
+    background-image: url('../images/ed5.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+#scholarNews3 {
+    background-image: url('../images/ed9.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+
+
+
+
