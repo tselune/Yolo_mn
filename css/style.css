@@ -59,11 +59,31 @@ form {
     margin: 30px
 }
 
+.nav {
+    justify-content: space-between;
+}
+
 .menu li {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
+
+.menuMobile {
+    display: none;
+}
+
+.btn {
+    font-size: 20px;
+    width: 40px;
+    height: 30px;
+    padding-top: 0px;
+}
+
+.closeMenu {
+    display: none;
+}
+
 
 /* ---------------------------------------------------------------- */
 
@@ -72,14 +92,14 @@ form {
     position: relative;
     display: flex;
     width: 100%;
-    height: 496px;
+    height: 500px;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
 .news1 img {
     width: 35%;
-    height: 360px;
+    height: 70%;
     border-radius: 41px;
     margin-left: 100px;
     margin-top: 80px;
@@ -180,37 +200,27 @@ h5 {
     float: left
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: #FFFFFF;
     right: 0px;
 }
 
-.swiper-slide{
-    width: 80%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.swiper-slide {
+    width: 20%;
+    height: 340px;
     margin: 20px 10px;
 }
 
-#sNews1::before {
-    background-image: url('../images/snew1.png');
+#sNews1 {
+    background-image: url('../images/snews1.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 80%;
-    height: 340px;
-    opacity: 70%;
-    content: "";
-}
-
-#sNews1 {
-    position: relative;
-    width: 80%;
-    height: 100%;
     display: flex;
+    margin: 20px;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     display: flex;
     white-space: space-around;
 }
@@ -218,9 +228,10 @@ h5 {
 .swiper-slide>p {
     background-color: rgba(111, 205, 219, 0.5);
     position: absolute;
-    padding: 10px;
+    padding: 10px 20px;
     top: 270px;
-    width: 80%;
+    bottom: 0px;
+    width: 100%;
     height: 70px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -231,88 +242,47 @@ h5 {
     text-align: left;
 }
 
-#sNews2::before {
-    background-image: url('../images/snews2.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 80%;
-    height: 340px;
-    opacity: 70%;
-    content: "";
-}
 
 #sNews2 {
+    background-image: url('../images/snews2.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: relative;
-    width: 80%;
-    height: 100%;
     display: flex;
 }
 
-#sNews3::before {
+
+#sNews3 {
     background-image: url('../images/snews3.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 80%;
-    height: 340px;
-    opacity: 70%;
-    content: "";
-}
-
-#sNews3 {
     position: relative;
-    width: 80%;
-    height: 100%;
+    ;
     display: flex;
-}
-
-#sNews4::before {
-    background-image: url('../images/snews4.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 80%;
-    height: 340px;
-    opacity: 70%;
-    content: "";
 }
 
 #sNews4 {
+    background-image: url('../images/snews4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: relative;
-    width: 80%;
-    height: 100%;
     display: flex;
 }
 
-#sNews5::before {
+
+#sNews5 {
     background-image: url('../images/snews5.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 80%;
-    height: 340px;
-    opacity: 70%;
-    content: "";
-}
-
-#sNews5 {
     position: relative;
-    width: 80%;
-    height: 100%;
     display: flex;
 }
 
-#sNews6::before {
+#sNews6 {
     background-image: url('../images/snews6.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 80%;
-    height: 340px;
-    opacity: 70%;
-    content: "";
-}
-
-#sNews6 {
     position: relative;
-    width: 80%;
-    height: 100%;
     display: flex;
 }
 
@@ -326,7 +296,7 @@ h5 {
 }
 
 .fam {
-    padding: 60px 60px;
+    padding: 60px;
 }
 
 .fam>img {
@@ -338,7 +308,7 @@ h5 {
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: 100%;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #famTxt {
@@ -349,7 +319,6 @@ h5 {
 
 .fam>p {
     font-size: 13px;
-    padding-left: auto;
     padding-top: 0px;
     display: flex;
     justify-content: center;
@@ -369,27 +338,27 @@ h5 {
     padding: 30px;
 }
 
-.latestNews >.liner {
+.latestNews>.liner {
     width: 80%;
 }
 
 .lNews>img {
-    width: 50%;
-    height: 210px;
+    width: 55%;
+    height: 80%;
     float: left;
     padding-right: 20px;
 }
 
 .lNews {
     width: 100%;
-    font-size: 10px;
-    height: 210px;
+    font-size: 12px;
+    height: 100%;
     margin-bottom: 30px;
     padding-left: 30px;
 
 }
 
-.lNews article {
+.lNews>article {
     font-size: 15px;
     font-weight: 500;
     padding-top: 10px;
@@ -411,4 +380,304 @@ footer {
 footer p {
     text-align: center;
     color: #8C858B;
+}
+
+@media screen and (max-width: 610px) {
+    body {
+        width: auto;
+        margin: 20px;
+    }
+
+    /* Header хэсэг */
+    header .header-icons {
+        display: none;
+    }
+
+    .form-control {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+        width: 25px;
+        height: 25px;
+        padding-left: 20px;
+    }
+
+    #yoloLogo {
+        width: 100px;
+        height: 45px;
+        padding-top: 6px;
+    }
+
+    form {
+        width: 15%;
+    }
+
+    .menu .nav {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .closeMenu {
+        display: none;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    /* News */
+    .news1 img,
+    .news1 p {
+        display: none;
+    }
+
+    .news1 h3 {
+        font-size: 15px;
+        width: 80%;
+        bottom: 20px;
+    }
+
+    .news1 {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .dot {
+        height: 7px;
+        width: 7px;
+    }
+
+    /* Suggested */
+    .swiper-slide {
+        height: 280px;
+        width: 35%;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-slide>p {
+        top: 220px;
+        width: 100%;
+        height: 60px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-size: 13px;
+    }
+
+    .liner {
+        display: none;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+    /* Famous */
+    #zendaya {
+        display: none;
+    }
+
+    .famousPeople {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .fam>p {
+        font-size: 10px;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .fam {
+        padding: 30px;
+    }
+
+    #famTxt {
+        font-size: 13px;
+    }
+
+/* Latest News */
+    .lateNews {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+/* Footer */
+    .fMenu>ul {
+        columns: 2;
+    }
+
+    .fMenu {
+        padding: 30px;
+    }
+
+    footer .header-icons a {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        width: auto;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    h5 {
+        font-size: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    /* Header хэсэг */
+    header .header-icons {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .form-control {
+        display: none;
+    }
+
+    .menuMobile {
+        display: block;
+        width: 25px;
+        height: 25px;
+        padding-left: 20px;
+    }
+
+    #yoloLogo {
+        width: 100px;
+        height: 45px;
+        padding-top: 6px;
+    }
+
+    form {
+        width: 20%;
+    }
+
+    .menu .nav {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .closeMenu {
+        display: none;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    /* News */
+    .news1 img,
+    .news1 p {
+        display: none;
+    }
+
+    .news1 h3 {
+        font-size: 15px;
+        width: 80%;
+        bottom: 20px;
+    }
+
+    .news1 {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .dot {
+        height: 5px;
+        width: 5px;
+    }
+
+    /* Suggested */
+    .swiper-slide {
+        height: 200px;
+        width: 40%;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-slide>p {
+        top: 160px;
+        width: 100%;
+        height: 40px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-size: 9px;
+        padding: 5px 20px;
+    }
+
+/* Famous */
+    .fam>p {
+        font-size: 8px;
+        display: flex;
+    }
+
+    .fam>img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .fam {
+        padding: 20px;
+    }
+
+    #famTxt {
+        font-size: 10px;
+    }
+
+/* Latest News */
+    .lateNews>p {
+        font-size: 8px;
+    }
+
+    .lNews article {
+        font-size: 12px;
+    }
+
+    .lNews p {
+        font-size: 8px;
+    }
+
+    /* Footer */
+    .fMenu {
+        padding: 30px;
+        font-size: 10px;
+    }
+
+    footer .header-icons a {
+        padding-left: 10px;
+    }
+
+    .fMenu .nav-link {
+        font-size: 10px;
+    }
 }

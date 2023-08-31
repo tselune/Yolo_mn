@@ -18,14 +18,16 @@
     <header>
         <div class="d-flex justify-content-between">
             <a href="index.html">
-                <img src="../images/logo.webp" alt="You Only Live Once" id="yoloLogo">
+                <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
             </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
                 <div class="input-group-btn">
                     <button class="btn btn-default" type="submit"><i class="fas fa-search" aria-hidden="true"
-                            name="search"></i></button>
+                            name="search" style="color: #6FCDDB;"></i></button>
                 </div>
+                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()"></div>
+                <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i></div>
             </form>
             <div class="header-icons">
                 <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
@@ -33,10 +35,11 @@
                 <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
             </div>
+            
         </div>
         <nav class="menu">
-            <ul class="nav justify-content-between">
-                <li class="nav-item">
+            <ul class="nav">
+                <li class="nav-item">   
                     <a class="nav-link" href="education.html">Боловсрол</a>
                 </li>
                 <li class="nav-item">
@@ -59,7 +62,7 @@
     <div class="slideNewsContainer">
         <article class="news1" id="mainNews1">
             <img src="../images/jisoo5.webp" alt="jisoo">
-            <h3>Jisoo “VOGUE” сэтгүүлийн<br>вэб хуудсыг гацаав</h3>
+            <h3>Jisoo “VOGUE” сэтгүүлийн вэб хуудсыг гацаав</h3>
             <p>Солонгосын алдарт Blackpink хамтлагийн гишүүн Jisoo алдарт “Vogue” сэтгүүлийн гуравдугаар сарын нүүр
                 царай болж дэлхийг шуугиулав.</p>
         </article>
@@ -109,7 +112,7 @@
                     <p>Physical 100: Таны бие таны бүтээл</p>
                 </div>
                 <div class="swiper-slide" id="sNews5">
-                    <p>Хичээлдээ сайжрахад тус болох 12 арга</p>
+                    <p>Хичээл хийхэд тус болох аргууд</p>
                 </div>
                 <div class="swiper-slide" id="sNews6">
                     <p>2023 онд цацагдах цомгууд</p>
@@ -138,7 +141,7 @@
                 <p id="famTxt">Бруно Марс</p>
                 <p>Дуучин</p>
             </div>
-            <div class="fam"><img src="../images/zendaya.webp" alt="Zendaya">
+            <div class="fam" id="zendaya"><img src="../images/zendaya.webp" alt="Zendaya">
                 <p id="famTxt">Зендаяа Колеман</p>
                 <p>Жүжигчин</p>
             </div>
@@ -177,7 +180,7 @@
 
     <footer>
         <section class="d-flex justify-content-between">
-            <a href="index.html"><img src="../images/yolo.svg" alt="You Only Live Once"></a>
+            <a href="index.html"><img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo"></a>
             <div class="header-icons">
                 <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
@@ -234,7 +237,7 @@
     <!-- initializing swiper slider -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             spaceBetween: 0,
             grabCursor: true,
             slidesPerGroup: 1,
@@ -244,6 +247,20 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+
+    <script>
+        function showMenu(){
+            document.getElementsByClassName("menu")[0].style.display = "inline";
+            document.getElementsByClassName("menuMobile")[0].style.display = "none";
+            document.getElementsByClassName("closeMenu")[0].style.display = "inline";
+        }
+
+        function hideMenu(){
+            document.getElementsByClassName("menu")[0].style.display = "none";
+            document.getElementsByClassName("menuMobile")[0].style.display = "inline";
+            document.getElementsByClassName("closeMenu")[0].style.display = "none";
+        }
     </script>
 </body>
 
