@@ -439,6 +439,7 @@ footer p {
         font-size: 15px;
         width: 80%;
         bottom: 20px;
+        border-width: 4px;
     }
 
     .news1 {
@@ -525,17 +526,17 @@ footer p {
     footer .header-icons a {
         font-size: 18px;
     }
+    .fMenu .nav-link {
+        font-size: 13px;
+    }
 }
+
 
 
 @media screen and (max-width: 480px) {
     body {
         width: auto;
         margin: 20px;
-    }
-
-    h3 {
-        font-size: 12px;
     }
 
     h5 {
@@ -598,13 +599,15 @@ footer p {
     }
 
     .news1 h3 {
-        font-size: 15px;
+        font-size: 8px;
         width: 80%;
         bottom: 20px;
+        left: 20px;
+        border-width: 2px;
     }
 
     .news1 {
-        height: 300px;
+        height: 200px;
         margin-top: 20px;
     }
 
