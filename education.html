@@ -9,32 +9,40 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/education.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header>
         <div class="d-flex justify-content-between">
-            <a href="index.html"><img src="../images/yolo.svg" alt="You Only Live Once" id="yoloLogo"></a>
+            <a href="index.html">
+                <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
+            </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
                 <div class="input-group-btn">
                     <button class="btn btn-default" type="submit"><i class="fas fa-search" aria-hidden="true"
-                            name="search"></i></button>
+                            name="search" style="color: #6FCDDB;"></i></button>
+                </div>
+                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()">
+                </div>
+                <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i>
                 </div>
             </form>
             <div class="header-icons">
-                <a href="https://www.facebook.com/YOLOmn/timeline" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.instagram.com/yolomongolia/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA" class="fa fa-youtube"
-                    target="_blank"></a>
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i
+                        class="fa-brands fa-youtube"></i></a>
             </div>
+
         </div>
         <nav class="menu">
-            <ul class="nav justify-content-between">
+            <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="education.html" id="selectedMenu">Боловсрол</a>
                 </li>
@@ -54,21 +62,44 @@
         </nav>
     </header>
 
-    <article class="eNews1">
-        <img src="../images/edu2.webp" alt="jisoo">
-        <h3>2023 онд зарлагдаад буй тэтгэлэгт хөтөлбөрүүд</h3>
-        <p>Шинэ он гараад удаагүй байгаа энэ хугацаанд зарим улс орнууд засгийн газрын тэтгэлэгт хөтөлбөрүүдээ зарлажээ. </p>
-    </article>
+    <div class="slideNewsContainer">
+        <article class="news1" id="eduNews1">
+            <img src="../images/edu2.webp" alt="jisoo">
+            <h3>2023 онд зарлагдаад буй тэтгэлэгт хөтөлбөрүүд</h3>
+            <p>Шинэ он гараад удаагүй байгаа энэ хугацаанд зарим улс орнууд засгийн газрын тэтгэлэгт хөтөлбөрүүдээ
+                зарлажээ. </p>
+        </article>
+
+        <article class="news1" id="eduNews2">
+            <img src="../images/edu2.webp" alt="jisoo">
+            <h3>2023 онд зарлагдаад буй тэтгэлэгт хөтөлбөрүүд</h3>
+            <p>Шинэ он гараад удаагүй байгаа энэ хугацаанд зарим улс орнууд засгийн газрын тэтгэлэгт хөтөлбөрүүдээ
+                зарлажээ. </p>
+        </article>
+
+        <article class="news1" id="eduNews3">
+            <img src="../images/edu2.webp" alt="jisoo">
+            <h3>2023 онд зарлагдаад буй тэтгэлэгт хөтөлбөрүүд</h3>
+            <p>Шинэ он гараад удаагүй байгаа энэ хугацаанд зарим улс орнууд засгийн газрын тэтгэлэгт хөтөлбөрүүдээ
+                зарлажээ. </p>
+        </article>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
 
 
     <!-- Мэргэжил сонголт -->
-    <section class="careerChoice">
+    <section class="career">
         <div class="swiper mySwiper">
             <h5>Мэргэжил сонголт</h5>
             <div class="liner"></div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide" id="careerNews1">
-                    <p>Мэргэжлээ сонгоход тань туслах 5 сорил</p>
+                    <p>Мэргэжлээ сонгоход туслах сорил</p>
                 </div>
                 <div class="swiper-slide" id="careerNews2">
                     <p>Нэн шаардлагатай 37 мэргэжил </p>
@@ -85,53 +116,93 @@
         </div>
     </section>
 
-    <!-- Гадаад хэл -->
 
-    <section class="foreignLang">
-        <div class="swiper mySwiper">
-            <h5>Гадаад хэл</h5>
-            <div class="liner"></div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" id="careerNews1">
-                    <p>Мэргэжлээ сонгоход тань туслах 5 сорил</p>
-                </div>
-                <div class="swiper-slide" id="careerNews2">
-                    <p>Нэн шаардлагатай 37 мэргэжил </p>
-                </div>
-                <div class="swiper-slide" id="careerNews3">
-                    <p>Ирээдүйд эрэлттэй байх 10 мэргэжил</p>
-                </div>
-                <div class="swiper-slide" id="careerNews4">
-                    <p>Устах эрсдэлтэй ажлын байрууд</p>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        <!-- <h5>Гадаад хэл</h5>
+<!-- Гадаад хэл -->
+<section class="language">
+    <div class="swiper mySwiper">
+        <h5>Гадаад хэл</h5>
         <div class="liner"></div>
-        <div class="fNewsFrame">
-            <div class="suggestedNews" id="fNews1">
-                <p>Нойр чинь хүрэхгүй<br>
-                    байна уу?</p>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="langNews1">
+                <p>Хятад хэлний түвшин ахиулахад туслах нь</p>
             </div>
-            <div class="suggestedNews" id="fNews2">
-                <p>Дээд Лигийн Play-Off -ын хуваарь, хүснэгт</p>
+            <div class="swiper-slide" id="langNews2">
+                <p>HSK ЗАЙЛШГҮЙ мэдэх ёстой зүйлс </p>
             </div>
-            <div class="suggestedNews" id="fNews3">
-                <p>Ирэх лхагва гарагт бүх нийтээр амарна</p>
+            <div class="swiper-slide" id="langNews3">
+                <p>Англи хэлээ сайжруулахад тань</p>
             </div>
-            <div class="suggestedNews" id="fNews4">
-                <p>Physical 100: Таны бие таны бүтээл</p>
+            <div class="swiper-slide" id="langNews4">
+                <p>Солонгос хэлийг бие даан сурах</p>
             </div>
-        </div> -->
-    </section>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Тэтгэлэг -->
+<section class="scholar">
+    <div class="swiper mySwiper">
+        <h5>Тэтгэлэг</h5>
+        <div class="liner"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="scholarNews1">
+                <p>БНХАУ-ын ЗГ-ийн тэтгэлэг</p>
+            </div>
+            <div class="swiper-slide" id="scholarNews2">
+                <p>Энэтхэг улсын ЗГ-ийн тэтгэлэг </p>
+            </div>
+            <div class="swiper-slide" id="scholarNews3">
+                <p>"Дэлхий чамайг дуудаж байна"</p>
+            </div>
+            <div class="swiper-slide" id="scholarNews4">
+                <p>"Голомт банк"-ны нэрэмжит тэтгэлэг"</p>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+    <footer>
+        <section class="d-flex justify-content-between">
+            <a href="index.html"><img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo"></a>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <section class="fMenu">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Бидний тухай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Холбоо барих</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Үйлчилгээний нөхцөл</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Редакцийн зарчим</a>
+                </li>
+            </ul>
+        </section>
+        <p>&copy 2023 YOLO ХХК</p>
+    </footer>
+
+  
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- initializing swiper slider -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
+            slidesPerView: 'auto',
             spaceBetween: 0,
             grabCursor: true,
             slidesPerGroup: 1,
@@ -142,6 +213,31 @@
             },
         });
     </script>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("news1");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
 
 
 </body>
