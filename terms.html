@@ -9,6 +9,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/info.css">
 </head>
@@ -16,38 +18,42 @@
 <body>
     <header>
         <div class="d-flex justify-content-between">
-            <a href="index.html"><img src="../images/logo.webp" alt="You Only Live Once" id="yoloLogo"></a>
+            <a href="index.html">
+                <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
+            </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
                 <div class="input-group-btn">
                     <button class="btn btn-default" type="submit"><i class="fas fa-search" aria-hidden="true"
-                            name="search"></i></button>
+                            name="search" style="color: #6FCDDB;"></i></button>
                 </div>
+                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()"></div>
+                <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i></div>
             </form>
             <div class="header-icons">
-                <a href="https://www.facebook.com/YOLOmn/timeline" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.instagram.com/yolomongolia/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA" class="fa fa-youtube"
-                    target="_blank"></a>
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
             </div>
+            
         </div>
         <nav class="menu">
-            <ul class="nav justify-content-between">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Боловсрол</a>
+            <ul class="nav">
+                <li class="nav-item">   
+                    <a class="nav-link" href="education.html">Боловсрол</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Энтертайнмент</a>
+                    <a class="nav-link" href="entertain.html">Энтертайнмент</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Хувь хүний боловсрол</a>
+                    <a class="nav-link" href="personal.html">Хувь хүний боловсрол</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Сонин хачин</a>
+                    <a class="nav-link" href="curNews.html">Сонин хачин</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Зөвлөгөө</a>
+                    <a class="nav-link" href="advise.html">Зөвлөгөө</a>
                 </li>
             </ul>
         </nav>
@@ -73,8 +79,9 @@
         </section>
 
         <section class="rightNav">
-            <article>Үйлчилгээний нөхцөл</article>
+            <h5>Үйлчилгээний нөхцөл</h5>
             <br>
+            <div class="liner"></div>
             <p>НЭГ. ЕРӨНХИЙ ЗҮЙЛ</p>
             <ul>
                 <li>1.1 www.yolo.mn сайтыг болон түүнд агуулагдаж байгаа бүх текст, фото, график, видео, дуу авиа агуулсан контентуудыг бүхэлд нь "Монгол Контент" ХХК хариуцдаг болно. Хэрэглэгч нь энэхүү үйлчилгээний нөхцөл, журамд нийцүүлэн уг сайтыг ашиглах шаардлагатай ба хэрэв дурдсан нөхцлүүдийг зөвшөөрөхгүй бол сайтад хандах болон хэрэглэхээс татгалзахыг зөвлөж байна.</li>
@@ -100,14 +107,52 @@
                 </li>
                 <li>4.3 Гуравдагч этгээдийн контентод туссан санаа, үзэл бодол, үнэн зөв байдал, байр суурийн өмнөөс сайт нь хариуцлага хүлээхгүй.</li>
             </ul>
-
-
         </section>
-
-
     </div>
 
+    <footer>
+        <section class="d-flex justify-content-between">
+            <a href="index.html"><img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo"></a>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
 
+        <section class="fMenu">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Бидний тухай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Холбоо барих</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./policy.html">Үйлчилгээний нөхцөл</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./terms.html">Редакцийн зарчим</a>
+                </li>
+            </ul>
+        </section>
+        <p>&copy 2023 YOLO ХХК</p>
+    </footer>
+
+    <script>
+        function showMenu(){
+            document.getElementsByClassName("menu")[0].style.display = "inline";
+            document.getElementsByClassName("menuMobile")[0].style.display = "none";
+            document.getElementsByClassName("closeMenu")[0].style.display = "inline";
+        }
+
+        function hideMenu(){
+            document.getElementsByClassName("menu")[0].style.display = "none";
+            document.getElementsByClassName("menuMobile")[0].style.display = "inline";
+            document.getElementsByClassName("closeMenu")[0].style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

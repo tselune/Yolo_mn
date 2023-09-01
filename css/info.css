@@ -17,31 +17,88 @@ ul a{
     float: left;
     padding-right: 20px;
     height: 400px;
+    width: 25%;
 }
 
-.info {
+.info { 
     margin-top: 40px;
 }
 
 .rightNav {
     float: left;
-    width: 800px;
-    margin-left: 20px;
+    width: 60%;
+    margin-left: 40px;
     text-align: justify;
 }
 
 .rightNav > img {
-    width: 700px;
+    width: 100%;
     height: 400px;
-    margin-left: 40px;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
+.rightNav>p {
+    margin-top: 20px;
+}
 .contactTxt {
     padding: 10px;
 }
 
 .rightNav > iframe {
     padding-left: 30px;
+}
+
+.rightNav>h5, .liner {
+    display: none;
+}
+.liner{
+    border-top: #6FCDDB solid 2px;
+    margin-bottom: 10px;
+}
+.rightNav h5 {
+    text-align: center !important;
+    float: none;
+}
+
+footer {
+    display: none;
+}
+
+@media screen and (max-width: 610px) {
+    .leftNav {
+        display: none;
+        border-right: none;
+    }
+
+    .liner{
+        color:#6FCDDB;
+        height: 5px;
+    }
+    .rightNav>h5, .liner {
+        display: block;
+    }
+
+    .rightNav {
+        width: 85%;
+    }
+    .rightNav>img {
+        height: auto;
+    }
+
+    footer {
+        display: inline-block;
+    }
+
+    ul li {
+        font-size: 10px;
+    }
+
+    .rightNav iframe {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+    
 }

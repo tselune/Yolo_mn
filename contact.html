@@ -9,6 +9,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/info.css">
 </head>
@@ -16,38 +18,42 @@
 <body>
     <header>
         <div class="d-flex justify-content-between">
-            <a href="index.html"><img src="../images/logo.webp" alt="You Only Live Once" id="yoloLogo"></a>
+            <a href="index.html">
+                <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
+            </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
                 <div class="input-group-btn">
                     <button class="btn btn-default" type="submit"><i class="fas fa-search" aria-hidden="true"
-                            name="search"></i></button>
+                            name="search" style="color: #6FCDDB;"></i></button>
                 </div>
+                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()"></div>
+                <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i></div>
             </form>
             <div class="header-icons">
-                <a href="https://www.facebook.com/YOLOmn/timeline" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://www.instagram.com/yolomongolia/" class="fa fa-instagram" target="_blank"></a>
-                <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
-                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA" class="fa fa-youtube"
-                    target="_blank"></a>
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
             </div>
+            
         </div>
         <nav class="menu">
-            <ul class="nav justify-content-between">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Боловсрол</a>
+            <ul class="nav">
+                <li class="nav-item">   
+                    <a class="nav-link" href="education.html">Боловсрол</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Энтертайнмент</a>
+                    <a class="nav-link" href="entertain.html">Энтертайнмент</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Хувь хүний боловсрол</a>
+                    <a class="nav-link" href="personal.html">Хувь хүний боловсрол</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Сонин хачин</a>
+                    <a class="nav-link" href="curNews.html">Сонин хачин</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Зөвлөгөө</a>
+                    <a class="nav-link" href="advise.html">Зөвлөгөө</a>
                 </li>
             </ul>
         </nav>
@@ -73,16 +79,60 @@
         </section>
 
         <section class="rightNav">
+            <h5>Холбоо барих</h5>
+            <br>
+            <div class="liner"></div>
             <p class="contactTxt">Мэдээний алба: 75553131<br>
                 Маркетинг, борлуулалтын алба: 99954431<br>
                 Цахим шуудан: yolo@mongolcontent.mn<br>
                 Хаяг: Монгол улс, Улаанбаатар хот, Сүхбаатар дүүрэг, 1-р хороо, ЮНЕСКО-ийн - 28, МПМ Цогцолбор 12 давхар</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11152.018338903747!2d106.90172915933692!3d47.90866872354222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JzQvtC90LPQvtC7INGD0LvRgSwg0KPQu9Cw0LDQvdCx0LDQsNGC0LDRgCDRhdC-0YIsINCh0q_RhdCx0LDQsNGC0LDRgCDQtNKv0q_RgNGN0LMsIDEt0YAg0YXQvtGA0L7Qviwg0K7QndCV0KHQmtCeLdC40LnQvSAtIDI4LCDQnNCf0Jwg0KbQvtCz0YbQvtC70LHQvtGAIDEyINC00LDQstGF0LDRgA!5e0!3m2!1sen!2smn!4v1693061138339!5m2!1sen!2smn" width="635" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11152.018338903747!2d106.90172915933692!3d47.90866872354222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JzQvtC90LPQvtC7INGD0LvRgSwg0KPQu9Cw0LDQvdCx0LDQsNGC0LDRgCDRhdC-0YIsINCh0q_RhdCx0LDQsNGC0LDRgCDQtNKv0q_RgNGN0LMsIDEt0YAg0YXQvtGA0L7Qviwg0K7QndCV0KHQmtCeLdC40LnQvSAtIDI4LCDQnNCf0Jwg0KbQvtCz0YbQvtC70LHQvtGAIDEyINC00LDQstGF0LDRgA!5e0!3m2!1sen!2smn!4v1693061138339!5m2!1sen!2smn" width="635px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-
-
     </div>
 
+    <footer>
+        <section class="d-flex justify-content-between">
+            <a href="index.html"><img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo"></a>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <section class="fMenu">
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Бидний тухай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Холбоо барих</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./policy.html">Үйлчилгээний нөхцөл</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./terms.html">Редакцийн зарчим</a>
+                </li>
+            </ul>
+        </section>
+        <p>&copy 2023 YOLO ХХК</p>
+    </footer>
+
+    <script>
+        function showMenu(){
+            document.getElementsByClassName("menu")[0].style.display = "inline";
+            document.getElementsByClassName("menuMobile")[0].style.display = "none";
+            document.getElementsByClassName("closeMenu")[0].style.display = "inline";
+        }
+
+        function hideMenu(){
+            document.getElementsByClassName("menu")[0].style.display = "none";
+            document.getElementsByClassName("menuMobile")[0].style.display = "inline";
+            document.getElementsByClassName("closeMenu")[0].style.display = "none";
+        }
+    </script>
 
 </body>
 
