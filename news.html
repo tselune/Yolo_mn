@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Jisoo Vogue magazine">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOLO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/news.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between">
+            <a href="index.html">
+                <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
+            </a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
+                <div class="btn">
+                    <i class="fas fa-search" aria-hidden="true"
+                            name="search" aria-label="Search" style="color: #6FCDDB;"></i>
+                </div>
+                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()" alt="Menu">
+                </div>
+                <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i>
+                </div>
+            </form>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline" aria-label="Visit our facebook page"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/" aria-label="Visit our instagram account"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" aria-label="Visit our twitter account"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA"
+                    aria-label="Visit our youtube channel"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+        <nav class="menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Боловсрол</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertain.html">Энтертайнмент</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal.html">Хувь хүний боловсрол</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="curNews.html">Сонин хачин</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="advise.html">Зөвлөгөө</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Мэдээ -->
+    <div class="newsContainer">
+        <article class="article">
+            <h4>Jisoo “VOGUE” сэтгүүлийн вэб хуудсыг гацаав</h4>
+            <div id="liner1"></div>
+            <br>
+            <div class="writer"><p id="journalist">Г.Даваахүү&nbsp;</p>| YOLO.MN 03-03-2023</div>
+            <section class="article1">
+                <img src="./images/article1.webp" alt="Jisoo" id="bigPic">
+
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;К-поп хамтлагийн гишүүд, одууд дэлхийн томоохон брэндийн нүүр царай болж,
+                    хамтран ажилладаг болоод
+                    уджээ. Тухайлбал Blackpink хамтлагийн гишүүн Jisoo алдарт “Vogue” сэтгүүлийн гуравдугаар сарын нүүр
+                    царай болсон. Тус сэтгүүлийн удирдлагууд Jisoo бол “Кпоп хөгжмийн шинэ үеийн нүүр царай” гэж
+                    тодорхойлжээ.Учир нь түүний зурагтай сэтгүүл нийтлэгдсэний дараа дэлхийн алдарт Vogue сэтгүүлийн
+                    вэбсайт
+                    хэсэг хугацаанд гацсан байна.
+                    Энэ талаар тус сэтгүүлийн ерөнхий редактор “Гуравдугаар сарын сэтгүүлийг авахаар маш олон хүн нэгэн
+                    зэрэг вэбсайт руу орох гэж оролдсоны улмаас ийм зүйл боллоо” гэсэн тайлбартайгаар вэбсайтын гацсан
+                    зургийн хамт нийтэлжээ.</p>
+                <div class="smallPic">
+                    <img src="./images/jisoo2.webp" alt="Jisoo" id="smallPic1">
+                    <img src="./images/jisoo5.webp" alt="Jisoo" id="smallPic2">
+                </div>
+                <p>Түүнчлэн Jisoo - ийн хамтран ажилладаг Dior брэндийн зөвхөн медиа үнэлгээ нь 45.5 сая ам.долларт
+                    хүрсэн байна.
+                    <br><br>
+                    Мөн Blackpink хамтлагийн бусад гишүүд ч мөн томоохон брэндүүдтэй хамтран ажилладаг. Тухайлбал Jennie
+                    “Chanel”, Rose “Saint Laurent” брэндийн олон улсын төлөөлөгчөөр ажилладаг бол Lisa “Celine”,
+                    “Bulgari” зэрэг брэндүүдтэй гэрээтэй.
+                    <br><br>
+                    Эх сурвалж: Korea Hearld
+                </p>
+            </section>
+        </article>
+
+          <!-- Санал болгох -->
+    <section class="swipNews" id="suggested">
+        <div class="swiper mySwiper">
+            <h5>Санал болгох</h5>
+            <div id="liner"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="sNews1">
+                    <p>Нойр чинь хүрэхгүй байна уу?</p>
+                </div>
+                <div class="swiper-slide" id="sNews2">
+                    <p>Дээд Лигийн Play-Off -ын хуваарь, хүснэгт</p>
+                </div>
+                <div class="swiper-slide" id="sNews3">
+                    <p>Ирэх лхагва гарагт бүх нийтээр амарна</p>
+                </div>
+                <div class="swiper-slide" id="sNews4">
+                    <p>Physical 100: Таны бие таны бүтээл</p>
+                </div>
+                <div class="swiper-slide" id="sNews5">
+                    <p>Хичээл хийхэд тус болох аргууд</p>
+                </div>
+                <div class="swiper-slide" id="sNews6">
+                    <p>2023 онд цацагдах цомгууд</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    </div>
+
+    <footer>
+        <section class="d-flex justify-content-between">
+            <a href="index.html"><img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo"></a>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/YOLOmn/timeline" aria-label="Visit our facebook page"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yolomongolia/" aria-label="Visit our instagram account"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" aria-label="Visit our twitter account"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCvh5ssGrpnHFjuXv8ytYIkA" aria-label="Visit our youtube channel"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <section class="fMenu">
+            <ul class="nav justify-content-between" id="footerMenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Бидний тухай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Холбоо барих</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./policy.html">Үйлчилгээний нөхцөл</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./terms.html">Редакцийн зарчим</a>
+                </li>
+            </ul>
+        </section>
+        <p>&copy 2023 YOLO ХХК</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- initializing swiper slider -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            grabCursor: true,
+            slidesPerGroup: 1,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

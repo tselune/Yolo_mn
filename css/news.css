@@ -1,0 +1,61 @@
+.article #liner {
+    width: 100% !important;
+}
+
+#bigPic {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.article1 {
+    text-align: center;
+    /* text-justify: ; */
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.article1>p {
+    text-align: justify;
+    width: 80%;
+    margin: 30px auto !important;
+}
+
+.smallPic>img {
+    width: 30%;
+    padding: 20px 30px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#journalist {
+    color: #EE4A9B;
+    display: inline;
+}
+#liner1 {
+    width: 100%;
+    border-bottom: 2px solid #6FCDDB;
+    float: right;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 610px) {
+    h4 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .writer {
+        font-size: 10px;
+    }
+    .smallPic>img {
+        width: 35%;
+        padding: 10px;
+    }
+
+}
