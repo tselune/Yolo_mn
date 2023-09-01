@@ -1,54 +1,18 @@
 console.log("start");
 //------------------------------------------------------------------------
-class country {
-  constructor(ob) {
-    this.c_name = ob.c_name;
-    this.rank = ob.rank;
-    this.details = ob.details;
-    this.id = ob.id;
-  }
+class MyArticle {
+    constructor(ob) {
+        this.id = "sNews"+ob.id;
+        this.news = ob.news;
+    }
 
-  render() {
-    return `
-    <div>
-        <section class="boxof">
-            <div  class="modal" id="${this.rank}">
-              <div  class="${this.rank}" >
-                <div class="modal-header">
-                  <div class="title">${this.c_name}</div>
-                  <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div id="${this.c_name}">
-                </div>
-              </div>
-            </div>   
-            <div class="wrapper card">
-                <div class="thumb">
-                </div>
-                <div class="infos">
-                <h2 class="titles"> ${this.c_name}<span class="flag"></span></h2>
-                <h3 class="date">Rank: ${this.rank}</h3>
-                <p class="txt">
-                    ${this.details}
-                </p>
-                <div>
-                    <button data-modal-target="#modal" role="button" id="${this.id}" class = "details" onclick="someFunction(${this.rank})">readmore</button>
-                    <h3 class="details2">ДЭЛГЭРЭНГҮЙ</h3>
-                </div>
-                </div>
-               
-            </div>
-         
-        </section> 
-    </div>
-        `;
-  }
+    render() {
+        return `
+        <div class="swiper-slide" id="${this.id}">
+            <p>${this.news}</p>
+        </div>`;
+    }
 }
-// ${tours.Download('modal-body' , this.id)}
-//------------------------------------------------------------------------
-const tours = new TopTour(
-  "https://api.jsonbin.io/v3/b/63a8496c01a72b59f238f0e8"
-);
 var len = 0;
 
 class countryies {
@@ -67,18 +31,10 @@ class countryies {
             // console.log(filteredTour);
             // console.log(filteredTour.length);
             gebi(targetElement).insertAdjacentHTML("afterbegin",filteredTour.map((map) => {
-                  const _map = new country(map);
+                  const _map = new MyArticle(map);
                   return _map.render();
                 })
                 .reduce((p, c) => p + c, "")
-            );
-          }
-          for (var mak in jsob.record.schools) {
-            console.log("make is = " + mak);
-            const filteredTour = jsob.record.schools[mak].filter((filter) => filter.top == false);
-            gebi(targetElement).insertAdjacentHTML("afterbegin",filteredTour.map((map) => {
-                    return tours.Download( map.c_name , map.id);
-                })
             );
           }
         });
@@ -96,3 +52,4 @@ const countrs = new countryies(
   "https://api.jsonbin.io/v3/b/63a8496c01a72b59f238f0e8"
 );
 countrs.Download("articles_top");
+
