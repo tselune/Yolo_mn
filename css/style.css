@@ -51,7 +51,7 @@ form {
 
 .form-control {
     background-color: #D9D9D9;
-    opacity: 30%;
+    opacity: 35%;
     color: white;
 }
 
@@ -103,7 +103,7 @@ form {
 
 .news1 img {
     width: 35%;
-    height: 70%;
+    height: 68%;
     border-radius: 41px;
     margin-left: 100px;
     margin-top: 80px;
@@ -142,7 +142,7 @@ form {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: #bbb 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .active,
@@ -232,7 +232,7 @@ h5 {
 
 .swiper-wrapper {
     display: flex;
-    white-space: space-around;
+    /* white-space: space-around; */
 }
 
 .swiper-slide>p {
@@ -353,7 +353,7 @@ h5 {
 
 .lNews>img {
     width: 55%;
-    height: 80%;
+    aspect-ratio: 1.25;
     float: left;
     padding-right: 20px;
 }
