@@ -12,8 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="medeenuud.js"></script>
+    <script type="module" src="sags.js"></script>
+    <style>
+        :root {
+            --default-border-radius: 10px;
+        }
     
-    <script type="module" src="webcompusedJ2.js"></script>
+        .gobi-product {
+            border: 1px solid gray;
+            border-radius: var(--default-border-radius);
+            overflow: hidden;
+            min-width: 30ch;
+            width: min-content;
+        }
+    </style>
 </head>
 
 <body>
@@ -100,25 +113,25 @@
         <div class="swiper mySwiper">
             <h5>Санал болгох</h5>
             <div id="liner"></div>
-            <div class="swiper-wrapper" id="swiper-wrapper">
-                <!-- <div class="swiper-slide" id="sNews1">
-                    <p>Нaaaaaa</p>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="sNews1">
+                    <p>Нойр чинь хүрэхгүй байна уу?</p>
                 </div>
                 <div class="swiper-slide" id="sNews2">
-                    <p>Дaваарь, хүснэгт</p>
+                    <p>Дээд Лигийн Play-Off -ын хуваарь, хүснэгт</p>
                 </div>
                 <div class="swiper-slide" id="sNews3">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaa амарна</p>
+                    <p>Ирэх лхагва гарагт бүх нийтээр амарна</p>
                 </div>
                 <div class="swiper-slide" id="sNews4">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaтээл</p>
+                    <p>Physical 100: Таны бие таны бүтээл</p>
                 </div>
                 <div class="swiper-slide" id="sNews5">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaууд</p>
+                    <p>Хичээл хийхэд тус болох аргууд</p>
                 </div>
                 <div class="swiper-slide" id="sNews6">
-                    <p>2aaaaaaaaaaaaaaaaaaaaaaa</p>
-                </div> -->
+                    <p>2023 онд цацагдах цомгууд</p>
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -177,9 +190,9 @@
             </div>
         </div>
     </section>
-<div class="test" id = "test">
 
-</div>
+    <gobi-shoppingcart color="#000"></gobi-shoppingcart>
+    <gobi-productlist direction="column"></gobi-productlist>
     <!-- </div> -->
 
     <footer>

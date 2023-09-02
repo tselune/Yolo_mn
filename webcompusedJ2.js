@@ -1,16 +1,16 @@
+import "./medee.js";
+// {/* <gobi-product></gobi-product> */}
 console.log("start");
 //------------------------------------------------------------------------
 class MyArticle {
     constructor(ob) {
         this.id = "sNews"+ob.id;
-        this.news = ob.news;
+        this.medee = ob.medee;
     }
 
     render() {
         return `
-        <div class="swiper-slide" id="${this.id}">
-            <p>${this.news}</p>
-        </div>`;
+        <gobi-product class="swiper-slide" medee="${this.medee}" id="${this.id}"></gobi-product> `;
     }
 }
 var len = 0;
@@ -25,13 +25,14 @@ class countryies {
       .then((result) => {
         result.json().then((jsob) => {
           // filter
-          for (var make in jsob.record.medeenuud) {
+          for (var make in jsob.record) {
             console.log(make);
-            const filteredTour = jsob.record.medeenuud[make].filter((filter) => filter.top == false);
+            const filteredTour = jsob.record[make].filter((filter) => filter.id / 1 );
             console.log(filteredTour);
-            // console.log(filteredTour.length);
-            
+
                 gebi(targetElement).insertAdjacentHTML("afterbegin",filteredTour.map((map) => {
+                    console.log(map.medee);
+                    console.log(map.id);
                   const _map = new MyArticle(map);
                   return _map.render();
                 })
