@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Rubik:wght@400;500&display=swap');
-
+html{
+    
+    max-width: 1920px;
+}
 body {
     background-color: black;
     margin: 30px auto;
-    width: 1080px;
+    width: 80%;
+
     height: 2400px;
     color: #F5F5F7;
     display: block;
@@ -24,7 +28,12 @@ header {
     height: 56px;
 }
 
+.nav {
+    justify-content: space-between;
+}
+
 .nav-link {
+    font-size: 90%;
     color: #FFFFFF;
 }
 
@@ -63,10 +72,6 @@ form {
     color: #EE4A9B !important;
 }
 
-.nav {
-    justify-content: space-between;
-}
-
 .menu li {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
@@ -96,24 +101,25 @@ form {
     position: relative;
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 45%;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
 .news1 img {
     width: 35%;
-    height: 68%;
+    height: 40%;
     border-radius: 41px;
-    margin-left: 100px;
-    margin-top: 80px;
-    margin-right: 0px;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
 
 .news1 h3 {
     color: white;
     position: absolute;
-    margin-top: 110px;
+    margin-top: 10%;
     width: 45%;
     font-size: 30px;
     font-weight: 800;
@@ -187,7 +193,7 @@ form {
 /* ---------------------------------------------------------------- */
 /* Санал болгох мэдээ  */
 #suggested {
-    height: 35%;
+    height: 50%;
     margin-top: 20px;
 }
 
@@ -254,7 +260,7 @@ h5 {
 
 
 #sNews2 {
-    background-image: url('../images/snews2.webp');
+    /* background-image: url('../images/snews2.webp'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -263,7 +269,7 @@ h5 {
 
 
 #sNews3 {
-    background-image: url('../images/snews3.webp');
+    /* background-image: url('../images/snews3.webp'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -271,7 +277,7 @@ h5 {
 }
 
 #sNews4 {
-    background-image: url('../images/snews4.webp');
+    /* background-image: url('../images/snews4.webp'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -280,7 +286,7 @@ h5 {
 
 
 #sNews5 {
-    background-image: url('../images/snews5.webp');
+    /* background-image: url('../images/snews5.webp'); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -391,7 +397,7 @@ footer p {
     color: #8C858B;
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 1200px) {
     body {
         width: auto;
         margin: 20px;
@@ -463,7 +469,7 @@ footer p {
 
     /* Suggested */
     .swiper-slide {
-        height: 280px;
+        height: 100%;
         width: 35%;
 
     }
