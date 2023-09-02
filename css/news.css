@@ -1,35 +1,44 @@
+.newsContainer{
+    margin-top: 5%;
+}
+
 .article #liner {
     width: 100% !important;
 }
 
 #bigPic {
     width: 70%;
-    margin-top: 20px;
 }
 
 .article1 {
     text-align: center;
+    margin-top: 5%;
     /* text-justify: ; */
 }
 
 h4 {
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 1.5vw;
+}
+
+p, .writer {
+    font-size: 1.2vw;
 }
 
 .article1>p {
     text-align: justify;
     width: 80%;
-    margin: 30px auto !important;
+    margin: 5% auto !important;
 }
 
 .smallPic>img {
     width: 30%;
-    padding: 20px 30px;
+    /* padding: 5% 6%; */
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 #journalist {
@@ -40,12 +49,12 @@ footer {
     width: 100%;
     border-bottom: 2px solid #6FCDDB;
     float: right;
-    padding-top: 10px;
+    padding-top: 3%;
 }
 
 
 @media screen and (max-width: 610px) {
-    h4 {
+    /* h4 {
         font-size: 12px;
         margin-top: 20px;
     }
@@ -56,6 +65,6 @@ footer {
     .smallPic>img {
         width: 35%;
         padding: 10px;
-    }
+    } */
 
 }
