@@ -1,3 +1,4 @@
+/* Гол мэдээ */
 #eduNews1 {
     background-image: url('../images/edu1.webp');
     background-repeat: no-repeat;
@@ -25,7 +26,7 @@
 #career #liner {
     width: 78%;
 }
-
+/* Мэргэжил сонголт */
 #careerNews1 {
     background-image: url('../images/ed1.webp');
     background-repeat: no-repeat;
@@ -54,6 +55,7 @@
     display: flex;
 }
 
+/* Гадаад хэл */
 #langNews1 {
     background-image: url('../images/ed7.webp');
     background-repeat: no-repeat;

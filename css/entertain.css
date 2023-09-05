@@ -1,3 +1,4 @@
+/* Кино урлаг */
 #movNews1 {
     background-image: url('../images/movie1.webp');
     background-repeat: no-repeat;
@@ -26,6 +27,7 @@
     width: 85%;
 }
 
+/* Дуу хөгжим */
 #musNews1 {
     background-image: url('../images/music1.webp');
     background-repeat: no-repeat;
@@ -54,7 +56,7 @@
     display: flex;
 }
 
-
+/* Оддын тухай*/
 #starNews1 {
     background-image: url('../images/star1.webp');
     background-repeat: no-repeat;
@@ -83,23 +85,22 @@
     display: flex;
 }
 
-
+/* Гол мэдээ */
 #entertainNews1 {
     background-image: url('../images/enterBack.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
 }
-
-#scholarNews2 {
-    background-image: url('../images/ed5.webp');
+#entertainNews2 {
+    background-image: url('../images/enterBack.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
 }
 
-#scholarNews3 {
-    background-image: url('../images/ed9.webp');
+#entertainNews3 {
+    background-image: url('../images/enterBack.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
