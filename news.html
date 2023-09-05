@@ -22,17 +22,18 @@
                 <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
             </a>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Хайх үгээ бичнэ үү" aria-label="Search">
+                <input class="form-control me-2" type="search" aria-label="Search">
                 <div class="btn">
                     <i class="fas fa-search" aria-hidden="true"
                             name="search" aria-label="Search" style="color: #6FCDDB;"></i>
                 </div>
-                <div class="menuMobile"><img src="../images/menu1.webp" width="25px" height="25px" onclick="showMenu()" alt="Menu">
+                <div class="menuMobile"><img src="../images/menu1.webp" onclick="showMenu()" alt="Menu">
                 </div>
                 <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i>
                 </div>
             </form>
             <div class="header-icons">
+                <i class="fa-solid fa-star" style="color: #FBA919; font-size: 1.3vw;"></i>
                 <a href="https://www.facebook.com/YOLOmn/timeline" aria-label="Visit our facebook page"><i
                         class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/yolomongolia/" aria-label="Visit our instagram account"><i
@@ -177,6 +178,20 @@
             },
         });
     </script>
+
+<script>
+    function showMenu(){
+        document.getElementsByClassName("menu")[0].style.display = "inline";
+        document.getElementsByClassName("menuMobile")[0].style.display = "none";
+        document.getElementsByClassName("closeMenu")[0].style.display = "inline";
+    }
+
+    function hideMenu(){
+        document.getElementsByClassName("menu")[0].style.display = "none";
+        document.getElementsByClassName("menuMobile")[0].style.display = "inline";
+        document.getElementsByClassName("closeMenu")[0].style.display = "none";
+    }
+</script>
 
 </body>
 
