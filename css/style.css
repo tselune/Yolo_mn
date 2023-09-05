@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Rubik:wght@400;500&display=swap');
 
 html {
-
     max-width: 1920px;
+    --default-blue: #6FCDDB;
+    --default-pink: #EE4A9B;
+    --default-yellow: #FBA919;
+    --default-gray: #D9D9D9;
+    --default-white: #FFFFFF;
 }
 
 body {
@@ -25,8 +29,8 @@ header {
 }
 
 #yoloLogo {
-    width: 50%;
-    height: 100%;
+    width: 11vw;
+    height: auto;
 }
 
 .nav {
@@ -36,15 +40,15 @@ header {
 
 .nav-link {
     font-size: 100%;
-    color: #FFFFFF;
+    color: var(--default-white);
 }
 
 .nav-item>a:hover {
-    color: #EE4A9B;
+    color: var(--default-pink);
 }
 
 .header-icons a {
-    color: #6FCDDB;
+    color: var(--default-blue);
     padding: 1vw;
     text-decoration: none;
     font-size: 1.3vw;
@@ -54,24 +58,25 @@ header {
     margin-top: 2%;
 }
 
+
 form {
     margin-top: 2%;
     width: 40%;
-    height: 2vw;
+    height: 1.5vw;
 }
 
 .form-control {
-    background-color: #D9D9D9;
+    background-color: var(--default-gray);
     opacity: 35%;
-    color: white;
+    color: var(--default-white);
 }
 
 .menu {
-    margin: 30px
+    margin: 1.5vw;
 }
 
 #selectedMenu {
-    color: #EE4A9B !important;
+    color: var(--default-pink) !important;
 }
 
 .menu li {
@@ -82,14 +87,17 @@ form {
 
 .menuMobile {
     display: none;
+    width: 1vw;
+    height: 1vw;
 }
 
 .btn {
-    font-size: 1.5vw;
-    /* width: 40px;
-    height: 30px; */
+    width: 1vw;
+    height: 1vw;
+    font-size: 1.2vw;
     padding-top: 0px;
 }
+
 
 .closeMenu {
     display: none;
@@ -115,7 +123,7 @@ form {
 }
 
 .news1 h3 {
-    color: white;
+    color: var(--default-white);
     position: absolute;
     margin-top: 10%;
     width: 45%;
@@ -125,7 +133,7 @@ form {
     left: 50%;
     padding-left: 10px;
     padding-bottom: 10px;
-    border-left: 5px #EE4A9B solid;
+    border-left: 5px var(--default-pink) solid;
 }
 
 .news1 p {
@@ -197,7 +205,7 @@ form {
 
 #liner {
     width: 85%;
-    border-bottom: 2px solid #6FCDDB;
+    border-bottom: 2px solid var(--default-blue);
     float: right;
     padding-top: 10px;
 }
@@ -369,7 +377,7 @@ h5 {
 
 /* Footer хэсэг */
 footer {
-    border-top: #6FCDDB 1px solid;
+    border-top: var(--default-blue) 1px solid;
     padding: 20px;
 }
 
@@ -385,6 +393,8 @@ footer p {
 
 }
 
+/*----------------------------------------------------------------*/
+/*Responsive*/
 @media screen and (max-width: 650px) {
     body {
         width: auto;
@@ -403,25 +413,28 @@ footer p {
     .menuMobile {
         display: block;
         padding-left: 3%;
+        width: 1.5vw;
+        height: 1.5vw;
     }
 
     .menuMobile img {
-        width: 10px;
-        height: 10px;
+        padding-bottom: 2vw;
+        width: 1.5vw;
+        height: auto;
     }
 
-    #yoloLogo {
+    /* #yoloLogo {
         width: 80px;
         height: 25px;
         padding-top: 6px;
-    }
+    } */
 
     .btn {
-        padding-top: 10%;
+        padding-top: none;
     }
 
     form {
-        width: 10%;
+        width: 15%;
     }
 
     .menu .nav {
@@ -524,10 +537,10 @@ footer p {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     /* Footer */
     .fMenu {
-        padding: 30px;
+        padding: 32px;
         font-size: 10px;
     }
 }   
