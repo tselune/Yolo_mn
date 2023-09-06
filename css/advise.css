@@ -1,26 +1,18 @@
 /* Гоо сайхан & загвар */
 #fashionNews1 {
     background-image: url('../images/beaut1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #fashionNews2 {
     background-image: url('../images/beaut2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #fashionNews3 {
     background-image: url('../images/beaut3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #fashionNews4 {
     background-image: url('../images/beaut4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #fashion #liner{
@@ -30,30 +22,18 @@
 /* Сэтгэл зүй- */
 #mentalNews1 {
     background-image: url('../images/mental1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #mentalNews2 {
     background-image: url('../images/mental2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #mentalNews3 {
     background-image: url('../images/mental3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #mentalNews4 {
     background-image: url('../images/mental4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 
@@ -61,53 +41,32 @@
 /* Эрүүл мэнд */
 #healthNews1 {
     background-image: url('../images/health1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #healthNews2 {
     background-image: url('../images/health2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #healthNews3 {
     background-image: url('../images/health3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #healthNews4 {
     background-image: url('../images/health4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 
 /* Гол мэдээ */
 #adviseNews1 {
     background-image: url('../images/adBack.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #adviseNews2 {
     background-image: url('../images/ed5.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #adviseNews3 {
     background-image: url('../images/ed9.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 

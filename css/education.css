@@ -1,20 +1,14 @@
 /* Гол мэдээ */
 #eduNews1 {
     background-image: url('../images/edu1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #eduNews2 {
     background-image: url('../images/medee1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #eduNews3 {
     background-image: url('../images/medee3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .slideNewsContainer {
@@ -29,89 +23,53 @@
 /* Мэргэжил сонголт */
 #careerNews1 {
     background-image: url('../images/ed1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #careerNews2 {
     background-image: url('../images/ed4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #careerNews3 {
     background-image: url('../images/ed11.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #careerNews4 {
     background-image: url('../images/ed6.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 /* Гадаад хэл */
 #langNews1 {
     background-image: url('../images/ed7.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #langNews2 {
     background-image: url('../images/ed3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #langNews3 {
     background-image: url('../images/ed8.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #langNews4 {
     background-image: url('../images/ed10.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 /* Тэтгэлэг */
 
 #scholarNews1 {
     background-image: url('../images/ed2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #scholarNews2 {
     background-image: url('../images/ed5.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #scholarNews3 {
     background-image: url('../images/ed9.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #scholarNews4 {
     background-image: url('../images/ed12.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 
