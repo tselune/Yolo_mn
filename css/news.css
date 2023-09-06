@@ -13,7 +13,6 @@
 .article1 {
     text-align: center;
     margin-top: 5%;
-    /* text-justify: ; */
 }
 
 h4 {
@@ -50,21 +49,4 @@ footer {
     border-bottom: 2px solid #6FCDDB;
     float: right;
     padding-top: 3%;
-}
-
-
-@media screen and (max-width: 610px) {
-    /* h4 {
-        font-size: 12px;
-        margin-top: 20px;
-    }
-
-    .writer {
-        font-size: 10px;
-    }
-    .smallPic>img {
-        width: 35%;
-        padding: 10px;
-    } */
-
 }
