@@ -6,6 +6,7 @@ class GobiProduct extends HTMLElement {
         super(); // always call super() first in the ctor.
         this.innerHTML = html`
             <p>${this.getAttribute("medee")}</p>
+            <button role="button">Add to cart</button>
         `
     }
     connectedCallback() {

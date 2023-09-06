@@ -26,13 +26,25 @@ class GobiShoppingcart extends HTMLElement {
     </svg>
     <div>${this.products.length}</div>`
     }
+    #RenderItems() {
+        let items =""
+        for( var i in this.products){
+            items += i.innerHTML;
+        }
+        console.log(items);
+        // document.getElementById("hadgalsan").insertAdjacentHTML("beforeend", items);
+    }
 
     AddToCart(myProduct) {
         this.products.push(myProduct);
         this.#Render();
+        this.#RenderItems();
+        console.log(this.products);
+        localStorage.setItem("Array", JSON.stringify(this.products))   
     }
     connectedCallback() {
-
+        this.#Render()
+        this.#RenderItems();
     }
     disconnectedCallback() {
     }
@@ -61,5 +73,4 @@ class GobiShoppingcart extends HTMLElement {
         }
     }
 }
-
 window.customElements.define('gobi-shoppingcart', GobiShoppingcart);
