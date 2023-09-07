@@ -1,6 +1,6 @@
 // <my-shoppingcard></my-shoppingcard>
 import html from './utility.js'
-
+import "./webcompusedJ2.js";
 class GobiShoppingcart extends HTMLElement {
     constructor() {
         super(); // always call super() first in the ctor.
@@ -26,25 +26,23 @@ class GobiShoppingcart extends HTMLElement {
     </svg>
     <div>${this.products.length}</div>`
     }
-    #RenderItems() {
-        let items =""
-        for( var i in this.products){
-            items += i.innerHTML;
-        }
-        console.log(items);
-        // document.getElementById("hadgalsan").insertAdjacentHTML("beforeend", items);
-    }
 
     AddToCart(myProduct) {
         this.products.push(myProduct);
         this.#Render();
-        this.#RenderItems();
+        console.log("mmm");
         console.log(this.products);
-        localStorage.setItem("Array", JSON.stringify(this.products))   
+        let items = "";
+        this.products.map((map) => {
+            items += map.outerHTML;
+        //   const _map = new MyArticle(map);
+        //   items += _map.render();
+        })
+        console.log(items);
+        localStorage.setItem("Array", JSON.stringify(items))   ;
     }
     connectedCallback() {
-        this.#Render()
-        this.#RenderItems();
+        this.#Render();
     }
     disconnectedCallback() {
     }
