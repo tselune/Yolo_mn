@@ -1,25 +1,24 @@
-// <gobi-productlist></gobi-productlist>
 import "./medee.js";
 
-class GobiProductlist extends HTMLElement {
+class YoloNewsList extends HTMLElement {
     constructor() {
         super(); // always call super() first in the ctor.
         this.innerHTML = `
         <style> 
-        .product-list{
+        .news-list{
             display:flex;
             flex-direction: ${ this.getAttribute("direction") }; 
             gap:2ch;
             flex-wrap: wrap;}
 
-        .product-list > gobi-product{
+        .news-list > yolo-news{
             flex: 1 1;
         }
       </style>
-    <div class="product-list">
-        <gobi-product></gobi-product>
-        <gobi-product></gobi-product>
-        <gobi-product></gobi-product>
+    <div class="news-list">
+        <yolo-news></yolo-news>
+        <yolo-news></yolo-news>
+        <yolo-news></yolo-news>
     </div>`;
     }
     connectedCallback() {
@@ -33,4 +32,4 @@ class GobiProductlist extends HTMLElement {
     }
 }
 
-window.customElements.define('gobi-productlist', GobiProductlist);
+window.customElements.define('yolo-newslist', YoloNewsList);

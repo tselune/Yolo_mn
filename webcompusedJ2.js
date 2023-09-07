@@ -1,5 +1,4 @@
 import "./medee.js";
-// {/* <gobi-product></gobi-product> */}
 console.log("start");
 //------------------------------------------------------------------------
 class MyArticle {
@@ -10,10 +9,9 @@ class MyArticle {
 
     render() {
         return `
-        <gobi-product class="swiper-slide" medee="${this.medee}" id="${this.id}"></gobi-product> `;
+        <yolo-news class="swiper-slide" medee="${this.medee}" id="${this.id}"></yolo-news> `;
     }
 }
-var len = 0;
 
 class countryies {
   constructor(tourUrl) {
