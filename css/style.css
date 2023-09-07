@@ -333,6 +333,7 @@ h5 {
 
 .lNews>img {
     width: 53%;
+    height: auto;
     float: left;
     padding-right: 5%;
 }
@@ -391,7 +392,7 @@ footer p {
     }
 
     .menuMobile {
-        display: block;
+        display: inline;
         padding-left: 3%;
         padding-top: 0px;
     }
@@ -507,6 +508,15 @@ footer p {
     footer .header-icons {
         margin-top: 0px;
         justify-content: end;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .menuMobile {
+        display: none !important;
+    }
+    .menu{
+        display: block !important;
     }
 }
   
