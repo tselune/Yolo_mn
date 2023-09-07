@@ -46,7 +46,6 @@ footer {
 }
 #liner1 {
     width: 100%;
-    border-bottom: 2px solid #6FCDDB;
+    border-bottom: 0.3vw solid #6FCDDB;
     float: right;
-    padding-top: 3%;
 }

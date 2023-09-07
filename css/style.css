@@ -29,7 +29,7 @@ header {
 }
 
 #yoloLogo {
-    width: 11vw;
+    width: 10vw;
     height: auto;
 }
 
@@ -39,7 +39,6 @@ header {
 }
 
 .nav-link {
-    font-size: 100%;
     color: var(--default-white);
 }
 
@@ -87,13 +86,11 @@ form {
 
 .menuMobile {
     display: none;
-    width: 1vw;
-    height: 1vw;
+    width: 50%;
+    height: 100%
 }
 
 .btn {
-    width: 1vw;
-    height: 1vw;
     font-size: 1.2vw;
     padding-top: 0px;
 }
@@ -102,7 +99,6 @@ form {
 .closeMenu {
     display: none;
 }
-
 
 /* ---------------------------------------------------------------- */
 
@@ -113,6 +109,8 @@ form {
     height: 45%;
     animation-name: fade;
     animation-duration: 1.5s;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .news1 img {
@@ -174,20 +172,14 @@ form {
 
 #mainNews1 {
     background-image: url('../images/jis1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #mainNews2 {
     background-image: url('../images/medee1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #mainNews3 {
     background-image: url('../images/medee3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .slideNewsContainer {
@@ -232,17 +224,15 @@ h5 {
     width: 20%;
     height: 25vw;
     margin: 30px 10px;
+    background-size: 100% 100%;
 }
 
 #sNews1 {
     background-image: url('../images/snews1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .swiper-wrapper {
     display: flex;
-    /* white-space: space-around; */
 }
 
 .swiper-slide>p {
@@ -265,34 +255,24 @@ h5 {
 
 #sNews2 {
     background-image: url('../images/snews2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 
 #sNews3 {
     background-image: url('../images/snews3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #sNews4 {
     background-image: url('../images/snews4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 
 #sNews5 {
     background-image: url('../images/snews5.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #sNews6 {
     background-image: url('../images/snews6.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 /* ----------------------------------------------------------------
@@ -309,7 +289,7 @@ h5 {
 
 .fam>img {
     width: 10vw;
-    height: 10vw;
+    height: auto;
     margin-left: 10%;
 }
 
@@ -413,42 +393,41 @@ footer p {
     .menuMobile {
         display: block;
         padding-left: 3%;
-        width: 1.5vw;
-        height: 1.5vw;
+        padding-top: 0px;
     }
 
     .menuMobile img {
         padding-bottom: 2vw;
-        width: 1.5vw;
+        width: 2vw;
         height: auto;
-    }
-
-    /* #yoloLogo {
-        width: 80px;
-        height: 25px;
-        padding-top: 6px;
-    } */
-
-    .btn {
-        padding-top: none;
+        padding-top: 0px;
     }
 
     form {
-        width: 15%;
+        width: 5%;
+    }
+
+    .btn {
+        display: none;
     }
 
     .menu .nav {
         flex-direction: column;
         text-align: right;
+        padding-right: 10vw;
     }
 
     .menu {
         display: none;
+        
+        /* position: absolute;
+        right: -200px; */
     }
 
     .closeMenu {
         display: none;
         padding-left: 10%;
+        font-size: 1.2vw;
     }
 
     /* News */
@@ -520,13 +499,9 @@ footer p {
         margin-top: 5%;
     }
 
-    /* Footer */
-    .fMenu>ul {
-        columns: 2;
-    }
-
     .fMenu {
-        padding: 30px;
+        padding-top: 1%;
+        padding-left: 10%;
     }
 
     footer .header-icons {
@@ -534,13 +509,4 @@ footer p {
         justify-content: end;
     }
 }
-
-
-
-@media screen and (max-width: 490px) {
-    /* Footer */
-    .fMenu {
-        padding: 32px;
-        font-size: 10px;
-    }
-}   
+  

@@ -1,26 +1,18 @@
 /* Кино урлаг */
 #movNews1 {
     background-image: url('../images/movie1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #movNews2 {
     background-image: url('../images/movie2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #movNews3 {
     background-image: url('../images/movie3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #movNews4 {
     background-image: url('../images/movie4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #liner {
@@ -30,80 +22,47 @@
 /* Дуу хөгжим */
 #musNews1 {
     background-image: url('../images/music1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #musNews2 {
     background-image: url('../images/music2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #musNews3 {
     background-image: url('../images/music3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #musNews4 {
     background-image: url('../images/music4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 /* Оддын тухай*/
 #starNews1 {
     background-image: url('../images/star1.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #starNews2 {
     background-image: url('../images/star2.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #starNews3 {
     background-image: url('../images/star3.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #starNews4 {
     background-image: url('../images/star4.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 /* Гол мэдээ */
 #entertainNews1 {
     background-image: url('../images/enterBack.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 #entertainNews2 {
     background-image: url('../images/enterBack.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 #entertainNews3 {
     background-image: url('../images/enterBack.webp');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
 }
 
 
