@@ -235,6 +235,59 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
+    <script>
+        class MyArticle {
+            constructor(news, id) {
+                this.id = "sNews"+id;
+                this.news = news;
+            }
+    
+            render() {
+                return `
+                <div class="swiper-slide" id="${this.id}" style = "background-image: url('../images/${this.id}.webp');">
+                    <p>${this.news}</p>
+                </div>`;
+            }
+        }
+        function App(articles, targetElement) {
+        
+            let retVal = "";
+            for (const article of articles) {
+                console.log("hi");
+                let articleObj = new MyArticle(article.medee, article.id);
+                retVal += articleObj.render();
+            }
+            console.log(retVal);
+            document.getElementById(targetElement).insertAdjacentHTML("afterbegin", retVal);
+        }
+        const newsData = {
+            medeenuud :[
+            {
+                "id" : "1",
+            "medee" : "Нойр чинь хүрэхгүй байна уу?",
+            } ,
+            {
+                "id" : "2",
+            "medee" : "Дээд Лигийн Play-Off -ын хуваарь, хүснэгт",
+            },
+            {"id" : "3",
+            "medee" : "Ирэх лхагва гарагт бүх нийтээр амарна",
+            },
+            {"id" : "4",
+            "medee" : "Physical 100: Таны бие таны бүтээл",
+            },
+            {"id" : "5",
+            "medee" : "Хичээлдээ сайжрахад тус болох 12 арга",
+            },
+            {"id" : "6",
+            "medee" : "2023 онд цацагдах цомгууд",
+            }   
+            ]
+            
+        }
+        window.onload = () => App(newsData.medeenuud, "swiper-wrapper");
+    </script>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- initializing swiper slider -->
@@ -265,59 +318,6 @@
             document.getElementsByClassName("closeMenu")[0].style.display = "none";
         }
     </script>
-
-<script>
-    class MyArticle {
-        constructor(news, id, img) {
-            this.id = "sNews"+id;
-            this.news = news;
-        }
-
-        render() {
-            return `
-            <div class="swiper-slide" id="${this.id}" >
-                <p>${this.news}</p>
-            </div>`;
-        }
-    }
-    function App(articles, targetElement) {
-    
-        let retVal = "";
-        for (const article of articles) {
-            console.log("hi");
-            let articleObj = new MyArticle(article.medee, article.id);
-            retVal += articleObj.render();
-        }
-        console.log(retVal);
-        document.getElementById(targetElement).insertAdjacentHTML("beforeend", retVal);
-    }
-    const newsData = {
-        medeenuud :[
-        {
-            "id" : "1",
-        "medee" : "Нойр чинь хүрэхгүй байна уу?",
-        } ,
-        {
-            "id" : "2",
-        "medee" : "Дээд Лигийн Play-Off -ын хуваарь, хүснэгт",
-        },
-        {"id" : "3",
-        "medee" : "Ирэх лхагва гарагт бүх нийтээр амарна",
-        },
-        {"id" : "4",
-        "medee" : "Physical 100: Таны бие таны бүтээл",
-        },
-        {"id" : "5",
-        "medee" : "Хичээлдээ сайжрахад тус болох 12 арга",
-        },
-        {"id" : "6",
-        "medee" : "2023 онд цацагдах цомгууд",
-        }   
-        ]
-        
-    }
-    window.onload = () => App(newsData.medeenuud, "swiper-wrapper");
-</script>
 
 </body>
 
