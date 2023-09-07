@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-    
-    <script type="module" src="webcompusedJ2.js"></script>
-    <script type="module" src="sags.js"></script>
 </head>
 
 <body>
@@ -29,11 +26,10 @@
                     <i class="fas fa-search" aria-hidden="true"
                             name="search" aria-label="Search" style="color: #6FCDDB;"></i>
                 </div>
-                <div class="menuMobile"><img src="../images/menu1.webp"  alt="Menu" onclick="showMenu()"></div>
+                <div class="menuMobile"><img src="../images/menu1.webp"  alt="Menu" onclick="showMenu()"></a></div>
                 <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i></div>
             </form>
             <div class="header-icons">
-                <a href="hadgalsan.html" ><i  class="fa-solid fa-star" style="color: #FBA919; font-size: 1.3vw;"></i></a>
                 <a href="https://www.facebook.com/YOLOmn/timeline" aria-label="Visit our facebook page"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/yolomongolia/" aria-label="Visit our instagram account"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/" aria-label="Visit our twitter account"><i class="fa-brands fa-twitter"></i></a>
@@ -61,7 +57,7 @@
         </nav>
     </header>
 
-    <!-- <div class="content-primary"> -->
+
     <div class="slideNewsContainer">
         <a href="./news.html">
         <article class="news1" id="mainNews1">
@@ -96,32 +92,30 @@
         </div>
     </div>
 
-    
-    <gobi-shoppingcart color="#000"></gobi-shoppingcart>
     <!-- Санал болгох -->
     <section class="swipNews" id="suggested">
         <div class="swiper mySwiper">
             <h5>Санал болгох</h5>
             <div id="liner"></div>
             <div class="swiper-wrapper" id="swiper-wrapper">
-                <!-- <div class="swiper-slide" id="sNews1">
-                    <p>Нaaaaaa</p>
+                <div class="swiper-slide" id="sNews1">
+                    <p>Нойр чинь хүрэхгүй байна уу?</p>
                 </div>
                 <div class="swiper-slide" id="sNews2">
-                    <p>Дaваарь, хүснэгт</p>
+                    <p>Дээд Лигийн Play-Off -ын хуваарь, хүснэгт</p>
                 </div>
                 <div class="swiper-slide" id="sNews3">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaa амарна</p>
+                    <p>Ирэх лхагва гарагт бүх нийтээр амарна</p>
                 </div>
                 <div class="swiper-slide" id="sNews4">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaтээл</p>
+                    <p>Physical 100: Таны бие таны бүтээл</p>
                 </div>
                 <div class="swiper-slide" id="sNews5">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaууд</p>
+                    <p>Хичээлдээ сайжрахад тус болох 12 арга</p>
                 </div>
                 <div class="swiper-slide" id="sNews6">
-                    <p>2aaaaaaaaaaaaaaaaaaaaaaa</p>
-                </div> -->
+                    <p>2023 онд цацагдах цомгууд</p>
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -180,7 +174,6 @@
             </div>
         </div>
     </section>
-    <!-- </div> -->
 
     <footer>
         <section class="d-flex justify-content-between">
@@ -265,6 +258,7 @@
             document.getElementsByClassName("menuMobile")[0].style.display = "inline";
             document.getElementsByClassName("closeMenu")[0].style.display = "none";
         }
+
     </script>
 </body>
 
