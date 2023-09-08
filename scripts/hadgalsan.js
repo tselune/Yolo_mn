@@ -1,7 +1,5 @@
 window.onload = function() {
-    // Your code here
     var myArray = JSON.parse(localStorage.getItem('Array'));
-    console.log("myyarray");
     console.log(myArray);
     gebi("hadgalsan").insertAdjacentHTML("afterbegin",myArray);
     console.log("myyarray");

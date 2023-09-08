@@ -1,22 +1,18 @@
-// <gobi-product></gobi-product>
 import html from "./utility.js";
 
-class GobiProduct extends HTMLElement {
+class YoloNews extends HTMLElement {
     constructor() {
         super(); // always call super() first in the ctor.
         this.innerHTML = html`
             <p>${this.getAttribute("medee")}</p>
-            <button role="button">Add to cart</button>
+            <button class="favBtn" style="background-color: transparent; border:none; trasnparent; margin-top:10%; float:right;"><i class="fa-regular fa-star" style="color: #FBA919; font-size: 1.5vw;"></i></button>
         `
     }
     connectedCallback() {
         this.querySelector("button").addEventListener("click", () => {
-            const myCart = document.querySelector("gobi-shoppingcart");
-            myCart.AddToCart(this);
-            myCart.color = "#0f0";
-            // MyApp.SetState("lastColor", "#0f0");
-            // MyApp.AddProductToShoppingCart(this);
-            // alert(MyApp.GetState("lastColor"));
+            const myFav = document.querySelector("yolo-favnews");
+            myFav.AddToFav(this);
+            myFav.color = "#0f0";
         })
     }
     disconnectedCallback() {
@@ -27,4 +23,4 @@ class GobiProduct extends HTMLElement {
     }
 }
 
-window.customElements.define('gobi-product', GobiProduct);
+window.customElements.define('yolo-news', YoloNews);

@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    
+    <script type="module" src="webcompusedJ2.js"></script>
+    <script type="module" src="sags.js"></script>
 </head>
 
 <body>
     <header>
         <div class="d-flex justify-content-between">
-            <a href="index.html">
+            <a href="js2.html">
                 <img src="../images/logo2.svg" alt="You Only Live Once" id="yoloLogo">
             </a>
             <form class="d-flex" role="search">
@@ -26,11 +29,11 @@
                     <i class="fas fa-search" aria-hidden="true"
                             name="search" aria-label="Search" style="color: #6FCDDB;"></i>
                 </div>
-                <div class="menuMobile"><img src="../images/menu1.webp"  alt="Menu" onclick="showMenu()"></div>
+                <div class="menuMobile"><img src="../images/menu1.webp"  alt="Menu" onclick="showMenu()"></a></div>
                 <div class="closeMenu"><i class="fa-solid fa-xmark" style="color: white;" onclick="hideMenu()"></i></div>
             </form>
             <div class="header-icons">
-                <i class="fa-solid fa-star" style="color: #FBA919; font-size: 1.3vw;"></i>
+                <a href="hadgalsan.html" ><yolo-favnews></yolo-favnews></a>
                 <a href="https://www.facebook.com/YOLOmn/timeline" aria-label="Visit our facebook page"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/yolomongolia/" aria-label="Visit our instagram account"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/" aria-label="Visit our twitter account"><i class="fa-brands fa-twitter"></i></a>
@@ -58,7 +61,7 @@
         </nav>
     </header>
 
-    <!-- <div class="content-primary"> -->
+
     <div class="slideNewsContainer">
         <a href="./news.html">
         <article class="news1" id="mainNews1">
@@ -93,7 +96,7 @@
         </div>
     </div>
 
-
+    
     <!-- Санал болгох -->
     <section class="swipNews" id="suggested">
         <div class="swiper mySwiper">
@@ -101,22 +104,22 @@
             <div id="liner"></div>
             <div class="swiper-wrapper" id="swiper-wrapper">
                 <!-- <div class="swiper-slide" id="sNews1">
-                    <p>Нойр чинь хүрэхгүй байна уу?</p>
+                    <p>Нaaaaaa</p>
                 </div>
                 <div class="swiper-slide" id="sNews2">
-                    <p>Дээд Лигийн Play-Off -ын хуваарь, хүснэгт</p>
+                    <p>Дaваарь, хүснэгт</p>
                 </div>
                 <div class="swiper-slide" id="sNews3">
-                    <p>Ирэх лхагва гарагт бүх нийтээр амарна</p>
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaa амарна</p>
                 </div>
                 <div class="swiper-slide" id="sNews4">
-                    <p>Physical 100: Таны бие таны бүтээл</p>
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaтээл</p>
                 </div>
                 <div class="swiper-slide" id="sNews5">
-                    <p>Хичээлдээ сайжрахад тус болох 12 арга</p>
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaууд</p>
                 </div>
                 <div class="swiper-slide" id="sNews6">
-                    <p>2023 онд цацагдах цомгууд</p>
+                    <p>2aaaaaaaaaaaaaaaaaaaaaaa</p>
                 </div> -->
             </div>
             <div class="swiper-button-next"></div>
@@ -176,10 +179,6 @@
             </div>
         </div>
     </section>
-<div class="test" id = "test">
-
-</div>
-    <!-- </div> -->
 
     <footer>
         <section class="d-flex justify-content-between">
@@ -235,59 +234,6 @@
             dots[slideIndex - 1].className += " active";
         }
     </script>
-    <script>
-        class MyArticle {
-            constructor(news, id) {
-                this.id = "sNews"+id;
-                this.news = news;
-            }
-    
-            render() {
-                return `
-                <div class="swiper-slide" id="${this.id}" style = "background-image: url('../images/${this.id}.webp');">
-                    <p>${this.news}</p>
-                </div>`;
-            }
-        }
-        function App(articles, targetElement) {
-        
-            let retVal = "";
-            for (const article of articles) {
-                console.log("hi");
-                let articleObj = new MyArticle(article.medee, article.id);
-                retVal += articleObj.render();
-            }
-            console.log(retVal);
-            document.getElementById(targetElement).insertAdjacentHTML("afterbegin", retVal);
-        }
-        const newsData = {
-            medeenuud :[
-            {
-                "id" : "1",
-            "medee" : "Нойр чинь хүрэхгүй байна уу?",
-            } ,
-            {
-                "id" : "2",
-            "medee" : "Дээд Лигийн Play-Off -ын хуваарь, хүснэгт",
-            },
-            {"id" : "3",
-            "medee" : "Ирэх лхагва гарагт бүх нийтээр амарна",
-            },
-            {"id" : "4",
-            "medee" : "Physical 100: Таны бие таны бүтээл",
-            },
-            {"id" : "5",
-            "medee" : "Хичээлдээ сайжрахад тус болох 12 арга",
-            },
-            {"id" : "6",
-            "medee" : "2023 онд цацагдах цомгууд",
-            }   
-            ]
-            
-        }
-        window.onload = () => App(newsData.medeenuud, "swiper-wrapper");
-    </script>
-
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- initializing swiper slider -->
@@ -317,8 +263,8 @@
             document.getElementsByClassName("menuMobile")[0].style.display = "inline";
             document.getElementsByClassName("closeMenu")[0].style.display = "none";
         }
-    </script>
 
+    </script>
 </body>
 
 
