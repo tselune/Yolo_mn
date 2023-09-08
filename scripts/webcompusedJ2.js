@@ -53,3 +53,13 @@ const countrs = new countryies(
 );
 countrs.Download("swiper-wrapper");
 
+
+window.onload = function() {
+  showItems()
+};
+
+
+function showItems(){
+  var len = JSON.parse(localStorage.getItem('len'));
+  gebi("cnt").textContent  = len;
+}
