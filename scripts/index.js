@@ -105,6 +105,7 @@ app.get('/medeenuud/:c_name', (req, res)=>{
     pool.query(queries.getbyId,[c_name] ,(err, data)=>{
         if(data.rowCount){
             res.status(200).json(data.rows);
+            console.log("h");
         }
         else {
             res.status(404).send(`${c_name} Not found`);   
