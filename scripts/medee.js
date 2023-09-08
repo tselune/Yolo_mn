@@ -5,7 +5,12 @@ class YoloNews extends HTMLElement {
         super(); // always call super() first in the ctor.
         this.innerHTML = html`
             <p>${this.getAttribute("medee")}</p>
-            <button class="favBtn" style="background-color: transparent; border:none; trasnparent; margin-top:10%; float:right;"><i class="fa-regular fa-star" style="color: #FBA919; font-size: 1.5vw;"></i></button>
+            <button class="favBtn" 
+                style="background-color: transparent; 
+                border:none; trasnparent; 
+                margin-top:10%; 
+                float:right;">
+            <i class="fa-regular fa-star" style="color: #FBA919; font-size: 1.5vw;"></i></button>
         `
     }
     connectedCallback() {

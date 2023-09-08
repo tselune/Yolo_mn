@@ -2,8 +2,9 @@
 import express from "express";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUI from "swagger-ui-express";
-const port = 5000;
-// const express = require("express");
+const port = 2000;
+
+
 const queries = {
     getmedeenuud:`SELECT * FROM medeenuud `,
     getbyId:`SELECT * FROM medeenuud where id = $1`,
@@ -69,8 +70,8 @@ app.listen(port, ()=>{
  * @openapi
  * /medeenuud:
  *      get:
- *          summary: medeenuud
- *          description: medeenuud datas
+ *          summary: News
+ *          description: News data
  *          responses:
  *              200:
  *                  description: response for OK!
@@ -112,65 +113,65 @@ app.get('/medeenuud/:c_name', (req, res)=>{
         }
     })
 })
-// /**
-//  * @openapi
-//  * /schools/post:
-//  *      post:
-//  *          summary: create medee
-//  *          requestBody: 
-//  *              description: desc Optional description in *Markdown*
-//  *              required: true
-//  *              content:
-//  *                  application/json:
-//  *                      schema:
-//  *                          properties:
-//  *                              sur_name: varchar
-//  *                              description: medee
-//  *          responses:
-//  *                  200:
-//  *                      description: response for OK!
-//  *                  500:
-//  *                      description: Error parsing!
-//  */
-// app.post('/medeenuud/post', (req, res)=>{
-//     const {
-//         c_id,
-//         crank
-//     } = req.body;
+/**
+ * @openapi
+ * /schools/post:
+ *      post:
+ *          summary: Create news
+ *          requestBody: 
+ *              description: Add new news
+ *              required: true
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                          properties:
+ *                              sur_name: varchar
+ *                              description: medee
+ *          responses:
+ *                  200:
+ *                      description: response for OK!
+ *                  500:
+ *                      description: Error parsing!
+ */
+app.post('/medeenuud/post', (req, res)=>{
+    const {
+        c_id,
+        crank
+    } = req.body;
     
-//     pool.query(queries.getbyId,[c_id], (err, data)=>{
-//         if(data.rowCount){
-//             res.send(`${C_name} registered`);
-//         }
-//         else{
-//             pool.query(queries.insertCountry, [c_id,crank],(err,data)=>{
-//                 res.status(201).send(`${c_id} created`);
-//             })
-//         }
-//     })
-// })
-// /**
-//  * @openapi
-//  * /medeenuud/upt:
-//  *      put:
-//  *          summary: upt
-//  *          requestBody: 
-//  *              content:
-//  */
+    pool.query(queries.getbyId,[c_id], (err, data)=>{
+        if(data.rowCount){
+            res.send(`${C_name} registered`);
+        }
+        else{
+            pool.query(queries.insertCountry, [c_id,crank],(err,data)=>{
+                res.status(201).send(`${c_id} created`);
+            })
+        }
+    })
+})
+/**
+ * @openapi
+ * /medeenuud/upt:
+ *      put:
+ *          summary: upt
+ *          requestBody: 
+ *              content:
+ */
 
-// app.put('/medeenuud/upt', (req, res)=>{
-//     const {
-//         c_id,
-//         crank
-//     } = req.body;
-//     pool.query(queries.getbyId,[c_id], (err, data)=>{
-//         if(data.rowCount){
-//             pool.query(queries.upd_ccountry, [c_id, crank], (err, data)=>{
-//                 res.status(200).send(`${c_id} uptaded`);
-//             })
-//         }
-//         else{
-//             res.send(`${c_id} NOT REGISTERED TOUR ID`);
-//         }
-//     })
-// })
+app.put('/medeenuud/upt', (req, res)=>{
+    const {
+        c_id,
+        crank
+    } = req.body;
+    pool.query(queries.getbyId,[c_id], (err, data)=>{
+        if(data.rowCount){
+            pool.query(queries.upd_ccountry, [c_id, crank], (err, data)=>{
+                res.status(200).send(`${c_id} uptaded`);
+            })
+        }
+        else{
+            res.send(`${c_id} NOT REGISTERED TOUR ID`);
+        }
+    })
+})
