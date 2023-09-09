@@ -18,7 +18,6 @@ class YoloFavNews extends HTMLElement {
     }
     AddToFav(favNews) {
         this.news.push(favNews);
-        showItems()
         console.log("Added to Fav News");
         console.log(this.news);
         let items = "";
@@ -29,6 +28,7 @@ class YoloFavNews extends HTMLElement {
         console.log(items);
         localStorage.setItem("Array", JSON.stringify(items));
         localStorage.setItem("len", JSON.stringify(this.news.length));
+        showItems();
     }
     connectedCallback() {
         this.#Render();
